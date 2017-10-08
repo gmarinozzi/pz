@@ -1,0 +1,44 @@
+body {
+  color: #444;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.2; }
+
+p {
+  margin: 0 0 0.75em; }
+
+a {
+  color: #4791ff;
+  text-decoration: none;
+  transition: all 250ms ease; }
+  a:active, a:focus, a:hover {
+    color: shade(#4791ff, 15%); }
+
+hr {
+  border-bottom: 1px solid #fafbfc;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0; }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0; }
+
+/*# sourceMappingURL=_base.css.map */

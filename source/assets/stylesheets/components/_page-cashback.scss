@@ -1,0 +1,183 @@
+.cashback-program-content{
+  h1{
+    text-align: center;
+    &:after{
+      content: '';
+      width: 100px;
+      height: 4px;
+      background-color: $blue;
+      display: block;
+      text-align: center;
+      margin: 30px auto;
+    }
+  }
+  p{
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .button{
+      background-color: $blue;
+      padding: 20px 30px;
+      display: inline-block;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: 10px;
+      a{
+        color: #fff;
+        display: block;
+        span{
+          font-weight: bold;
+          display: block;
+          line-height: 18px;
+        }
+      }
+    }
+  .how-it-works{
+    padding: 60px 0;
+    ul{
+      padding: 0;
+      li{
+        list-style: none;
+        font-size: 18px;
+        line-height: 24px;
+        padding-bottom: 15px;
+        &:before{
+          width: 24px;
+          height: 24px;
+          background-color: $blue;
+          border-radius: 2px;
+          content: '\2714';
+          display: inline-block;
+          color: #fff;
+          text-align: center;
+          font-size: 16px;
+          margin-right: 15px;
+          float: left;
+        }
+      }
+    }
+  }
+  .why-how{
+    background-color: $light-gray;
+    padding: 60px 0;
+    .col50{
+      padding-right: 50px;
+    }
+    h3{
+      font-weight: bold;
+    }
+    hr{
+      border-color: darken($light-gray, 5%);
+    }
+    .item{
+      padding: 15px 0;
+      .icon{
+        display: inline-block;
+        float: left;
+      }
+      .text{
+        padding-left: 100px;
+      }
+    }
+  }
+  .free-bonus{
+    text-align: center;
+    padding: 60px 0;
+  }
+  .brokers{
+    padding: 60px 0;
+    background-color: #464646;
+    color: #fff;
+    h3{
+      padding-bottom: 20px;
+    }
+    p{
+      font-size: 14px;
+      padding-bottom: 30px;
+      color: #ededed;
+    }
+    .cards{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-right: 40px;
+      align-items: stretch;
+    }
+    .card{
+      flex-basis:33.33%;
+      .card-content{
+        background-color: #fff;
+        border-radius: 5px;
+        color: #444;
+        padding: 15px 30px;
+        margin: 0 15px 15px 0;
+      }
+
+      h4{
+        font-size: 14px;
+      }
+      ul{
+        padding: 0 0 0 20px;
+        margin: 5px 0;
+        li{
+          list-style: circle;
+        }
+      }
+    }
+    .calculator{
+      h4 {
+        font-size: 18px;
+        padding: 25px 0 5px 0;
+        span{
+          float: right;
+          font-weight: normal;
+        }
+      }
+      hr{
+        border-color: darken($light-gray, 5%);
+      }
+      .results{
+        h4{
+          padding: 0 0 5px 0;
+          strong{
+            float: right;
+            color: $blue;
+            &:before{
+              content: '\25B2';
+              font-size: 8px;
+              line-height: 8px;
+              padding-top: 5px;
+              padding-right: 5px;
+              display: inline-block;
+              transform: scale(2, 1.2);
+              float: left;
+            }
+          }
+        }
+      }
+    }
+  }
+  .faqs{
+    text-align: center;
+    padding: 60px 0;
+    dl{
+      text-align: left;
+      padding: 0 15%;
+      dt{
+        font-weight: bold;
+      }
+      dd{
+        padding: 0;
+        margin-left: 0;
+        padding-bottom: 20px;
+
+      }
+    }
+  }
+  input{
+    width:100%;
+    &:focus {
+      outline: none;
+    }
+  }
+}

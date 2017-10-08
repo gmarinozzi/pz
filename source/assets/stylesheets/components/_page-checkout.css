@@ -1,0 +1,20 @@
+.checkout {
+  padding: 40px 0;
+  overflow: hidden; }
+  .checkout .container {
+    display: flex;
+    align-items: flex-start; }
+  .checkout aside {
+    flex-basis: 300px; }
+  .checkout article {
+    padding-left: 40px;
+    width: 100%; }
+    .checkout article .icon-confirmation {
+      float: left;
+      display: inline-block;
+      width: 45px;
+      margin-right: 20px; }
+  .checkout .button {
+    display: inline-block; }
+
+/*# sourceMappingURL=_page-checkout.css.map */

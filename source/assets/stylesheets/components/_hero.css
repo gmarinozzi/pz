@@ -1,0 +1,29 @@
+.hero {
+  background: url("../images/hero.jpg");
+  height: 480px;
+  margin-top: 20px; }
+  .hero .caption {
+    float: right;
+    text-align: right;
+    color: #fff;
+    padding: 60px 60px 0 0; }
+    .hero .caption h1 {
+      font-size: 30px; }
+    .hero .caption h3 {
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 24px; }
+      .hero .caption h3 strong {
+        background-color: rgba(255, 255, 255, 0.2);
+        display: inline-block;
+        padding: 0 5px; }
+    .hero .caption hr {
+      background: url("../images/divider.png") right no-repeat;
+      height: 10px;
+      border: none;
+      margin: 30px 0; }
+    .hero .caption h2 {
+      font-size: 24px;
+      font-weight: bold; }
+
+/*# sourceMappingURL=_hero.css.map */

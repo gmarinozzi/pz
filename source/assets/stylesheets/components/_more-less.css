@@ -1,0 +1,28 @@
+.read-more-state {
+  display: none; }
+
+.read-more-target {
+  display: none;
+  transition: .25s all ease; }
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  display: block;
+  transition: .25s all ease; }
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'More'; }
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Less'; }
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em; }
+
+/*# sourceMappingURL=_more-less.css.map */

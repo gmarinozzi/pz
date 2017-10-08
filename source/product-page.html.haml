@@ -1,0 +1,395 @@
+---
+title: PZ - Product Page
+---
+
+%header
+	.container
+		.logo
+			=link_to image_tag('pz-logo.png', alt: 'PZ Logo')
+		%nav
+			%ul
+				%li.submenu
+					=link_to 'Products', '#'
+					%ul
+						%li=link_to 'Indicators', '#'
+						%li=link_to 'Expert Advisors', '#'
+						%li=link_to 'Free Download', '#'
+				%li=link_to 'Cashback Program', '#'
+				%li=link_to 'Help', '#'
+		.social
+			=link_to image_tag('icons/fb.svg', alt: 'facebook'), 'http://www.facebook.com', target: '_blank'
+			=link_to image_tag('icons/tw.svg', alt: 'twitter'), 'http://www.twitter.com', target: '_blank'
+		.search
+			%form
+				%input{type: 'text', placeholder: 'Search..'}
+%section
+	.breadcrumb
+		.container
+			%ul
+				%li=link_to 'Home', '#'
+				%li=link_to 'Products', '#'
+				%li=link_to 'Metatrader Expert Advisor', '#'
+				%li Safety Net EA
+%section.product
+	.container
+		%aside
+			=image_tag('http://pointzero-trading.com/webroot/images/icons_300/trend_trading_300.png')
+			.price $299
+			.button.two-lines.bg-blue
+				=link_to '#' do
+					Buy for Metatrader4
+					%small Instant Download / Manual Installation
+			.button.two-lines.bg-green
+				=link_to '#' do
+					Buy for Metatrader5
+					%small From Metatrader Market
+			.features
+				%h4
+					%i=image_tag('icons/includes.png')
+					The purchase includes...
+				%ul
+					%li Lifetime technical support
+					%li Free software updates
+					%li Expert files
+
+				%h4
+					%i=image_tag('icons/who-is-for.png')
+					Who is this tool for?
+				%p This Expert Advisor will recover your losing trades and turn them into winners. It is a trade management strategy only.
+
+				%h4
+					%i=image_tag('icons/what-is-not.png')
+					What this tool is not?
+				%p This EA is not designed for fully automated trading, although it implements a few automated entries.
+
+			%hr
+			.info
+				%dl
+					%dt Published:
+					%dd 28 September 2015
+					%dt Current version:
+					%dd 20.5
+					%dt Updated:
+					%dd 18 May 2017
+			.button.pdf
+				=link_to '#' do
+					Download PDF user guide
+			%hr
+			.guarantee=image_tag('icons/guarantee.png')
+			.cards
+				%ul
+					%li=image_tag('icons/cards/paypal.png')
+					%li=image_tag('icons/cards/visa.png')
+					%li=image_tag('icons/cards/mastercard.png')
+					%li=image_tag('icons/cards/skrill.png')
+					%li=image_tag('icons/cards/bitcoin.png')
+					%li=image_tag('icons/cards/diamante.png')
+					%li=image_tag('icons/cards/pound.png')
+		%article
+			%h1 Safety Net EA 20.2
+			%h3 Metatrader (MT4) Expert Advisor
+
+			%ul.product-tabs
+				%li.tab-header-and-content
+					=link_to 'Overview', '#', class: 'tab-link is-active'
+					.tab-content
+						%input.read-more-state#post-1{ type: 'checkbox'}
+						.read-more-wrap
+							%p The <strong>PZ Safety Net EA</strong> turns your losing trades into winners using a unique imbalanced hedging strategy which places alternative pending orders until an exit point is reached.
+							%ul
+								%li Easy to set up and supervise
+								%li Controllable risk and net exposure
+								%li Risk and drawdown are pre-calculated
+								%li Implements 25 automated entry strategies
+								%li Is able to start trades using your custom indicators
+								%li Backtests using random trades, and makes money!
+								%li Trade easily from the chart buttons
+								%li Trades mini accounts from $1,000
+								%li Filter trading by forex sessions
+								%li All you need is a VPS!
+							.read-more-target
+								%h4 How to properly configure the robot
+								%p To reap constant profits in the long run, you must follow the instructions below when configuring the EA. Remember to never start trading if the risk allocation the EA displays is dangerous.
+								%ol
+									%li Load the EA to the chart.
+									%li Check Risk Allocation and Max. Drawdown values from the top-right corner of the chart.<br>The EA pre-calculates the maximum loss you can experience with the current settings and evaluates the risk profile for you.
+									%li
+										If the risk allocation label is red and the drawdown over 40-50%, you need to decrease the exposure of the EA.<br>
+										To decrease the risk allocation, perform one or more of the following measures.
+										%ul
+											%li Attenuate the <span class="light">Behavior</span> parameter slightly. It the risk is still high...
+											%li Decrease the <span class="light">Trades</span> parameter slightly, but never set below 7 or 8 trades.
+											%li Decrease the <span class="light">Lotsize</span> parameter.
+									%li Once the risk is acceptable to you (Safe or Aggressive), start trading using the chart buttons!
+								%h4 How to properly configure the robot
+								%p When loading the expert to any chart, you will be presented with a set of options as input parameters. Don't despair if you think they are too many, because parameters are grouped into self-explanatory blocks. Each functional parameter is explained below.
+								%dl
+									%dt Lotsize for first trade
+									%dd This parameter controls the size of the initial trade. A smaller lotsize decreases the net exposure of the deal.
+									%dt Break-even in pips
+									%dd This parameter controls at which profit in pips the EA moves the stop-loss above/below the open price securing profits.<br> This parameter only affects the first trade, not during the recovery process.
+									%dt Trailing Stop
+									%dd Percentage of the max. favorable excursion (MFE) used as trailing-stop. A small value is a tight stop, and a big value is a wide stop.<br> This parameter only affects the first trade, not during the recovery process.
+						%label.read-more-trigger{:for => "post-1"}
+						.screenshots
+							%h3 Screenshots
+							=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+							.cols
+								.col
+									=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+								.col
+									=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+								.col
+									=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+							%h3 Videos
+							.cols
+								.col
+									.video
+										.video-wrapper
+											%iframe{:allowfullscreen => "", :frameborder => "0", :src => "http://www.youtube.com/embed/8ItNE_DX6Cc?showinfo=0&iv_load_policy=3&controls=0"}
+									.caption Safety Net EA 20.2
+								.col
+									.video
+										.video-wrapper
+											%iframe{:allowfullscreen => "", :frameborder => "0", :src => "http://www.youtube.com/embed/8ItNE_DX6Cc?showinfo=0&iv_load_policy=3&controls=0"}
+									.caption Safety Net EA 20.2
+
+
+				%li.tab-header-and-content
+					=link_to 'Input parameters', '#', class: 'tab-link'
+					.tab-content
+						.image-border=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/trend_trading_params.png')
+						%p When loading the indicator to any chart, you will be presented with a set of options as input parameters. Don't despair if you think they are too many, because parameters are grouped into self-explanatory blocks.
+						%dl
+							%dt Indicator Settings
+							%dd Under the indicator settings block, you will be able to set the indicator period and choosing what trading setups must be displayed. You can display or hide pullbacks, trend bars, breakouts and corrections. The MaxHistoryBars parameter controls how many past bars are examined to minimize memory usage.
+							%dt Drawing Settings
+							%dd Choose the color and width of the correction lines displayed on the chart.
+							%dt Alerts
+							%ddEnable display/email/push/sound alerts for all the trading setups enabled.
+				%li.tab-header-and-content
+					=link_to 'Developers', '#', class: 'tab-link'
+					.tab-content
+						%p
+							In order to build your expert advisor, you can read data from the indicator using the iCustom() function as exemplified below.
+							%br
+							Read more information about the iCustom() function
+							=link_to 'here', '#'
+						%pre
+							%code
+								:preserve
+									//---- Step 1: Define constants in your EA
+									#define OP_BUY_BAT            1
+									#define OP_SELL_BAT           2
+									#define OP_BUY_GARTLEY        3
+									#define OP_SELL_GARTLEY       4
+									#define OP_BUY_CRAB           5
+									#define OP_SELL_CRAB          6
+									#define OP_BUY_BUTTERFLY      7
+									#define OP_SELL_BUTTERFLY     8
+									#define OP_BUY_SHARK          9
+									#define OP_SELL_SHARK         10
+									#define OP_BUY_CYPHER         11
+									#define OP_SELL_CYPHER        12
+									#define OP_BUY_ALTERNATE_BAT  13
+									#define OP_SELL_ALTERNATE_BAT 14
+									#define OP_BUY_DEEP_CRAB      15
+									#define OP_SELL_DEEP_CRAB     16
+									#define OP_BUY_WHITE_SWAN     17
+									#define OP_SELL_WHITE_SWAN    18
+									#define OP_BUY_BLACK_SWAN     19
+									#define OP_SELL_BLACK_SWAN    20
+									#define OP_BUY_MAX_BAT        21
+									#define OP_SELL_MAX_BAT       25
+									#define OP_BUY_MAX_GARTLEY    26
+									#define OP_SELL_MAX_GARTLEY   27
+									#define OP_BUY_MAX_BUTTERFLY  28
+									#define OP_SELL_MAX_BUTTERFLY 29
+									#define OP_BUY_A_CRAB         30
+									#define OP_SELL_A_CRAB        31
+									#define OP_BUY_A_BUTTERFLY    32
+									#define OP_SELL_A_BUTTERFLY   33
+									#define OP_BUY_A_BAT          34
+									#define OP_SELL_A_BAT         35
+									#define OP_BUY_A_GARTLEY      36
+									#define OP_SELL_A_GARTLEY     37
+									#define OP_BUY_SEA_PONY       38
+									#define OP_SELL_SEA_PONEY     39
+									#define OP_BUY_ALT_SHARK      40
+									#define OP_SELL_ALT_SHARK     41
+									//---- Step 2: Read values from the signal buffer
+									int start()
+									{
+									// Read pattern and breakout buffer
+									double pattern  = iCustom(Symbol(), Period(), "PZ_HarmonicTrading_LICENSE", 0, 1);
+									double breakout = iCustom(Symbol(), Period(), "PZ_HarmonicTrading_LICENSE", 1, 1);
+									// Do something
+									if(pattern == OP_BUY_BAT)        { /* Your code for bullish bat pattern */ }
+									if(pattern == OP_SELL_BAT)       { /* Your code for bearish bat pattern */ }
+									if(pattern == OP_BUY_GARTLEY)    { /* Your code for bullish gartley pattern */ }
+									if(pattern == OP_SELL_GARTLEY)   { /* Your code for bearish gartley pattern */ }
+									if(pattern == OP_BUY_CRAB)       { /* Your code for bullish crab pattern */ }
+									if(pattern == OP_SELL_CRAB)      { /* Your code for bearish crab pattern */ }
+									if(pattern == OP_BUY_BUTTERFLY)  { /* Your code for bullish butterfly pattern */ }
+									if(pattern == OP_SELL_BUTTERFLY) { /* Your code for bearish butterfly pattern */ }
+									if(pattern == OP_BUY_SHARK)      { /* Your code for bullish shark pattern */ }
+									if(pattern == OP_SELL_SHARK)     { /* Your code for bearish shark pattern */ }
+									if(pattern == OP_BUY_CYPHER)     { /* Your code for bullish cyhper pattern */ }
+									if(pattern == OP_SELL_CYPHER)    { /* Your code for bearish cypher pattern */ }
+									/* All other pattern constants above can be evaluated here too */
+									if(breakout == OP_BUY)           { /* Your code for bullish breakout (blue arrow) */}
+									if(breakout == OP_SELL)          { /* Your code for bearish breakout (red arrow) */}
+									if(pattern == EMPTY_VALUE && breakout == EMPTY_VALUE) { /* No pattern or breakout */}
+									// Exit
+									return(0);
+									}
+						.copy-code
+							=link_to 'Copy the Code to Clipboard', '#'
+				%li.tab-header-and-content
+					=link_to 'FAQs', '#', class: 'tab-link'
+					.tab-content
+						%dl
+							%dt Does the indicator repaint or backpaint?
+							%dd No, the indicator is non-repainting and non-backpainting.
+							%dt What should I trade with this indicator?
+							%dd Trade everything! Any market with price and volume is suitable for trading. We trade indexes, forex, commodities and stocks.
+							%dt I am a novice trader. Can this indicator be useful to me?
+							%dd Absolutely! It will keep you on the right side of the market and prevent costly mistakes.
+							%dt Can I move the dashboard on the chart?
+							%dd Yes, you can drag and drop the dashboard anywhere on the chart.
+							%dt Will this indicator make me a profitable trader?
+							%dd Trading requires skill and no tool can replace you. But one thing is for sure, this indicator will improve your trading returns. Just don't panic if you have some down months. Trading is a waiting game and profits come in bunches: you sit, you wait, and you make a lot of money all at once.
+							%dt Is this just another trend trading indicator which gets whipsawed to death?
+							%dd No, it is not. The PZ Trend Trading indicator solves the timing problem by detecting pullbacks and breakouts. Some trend changes will inevitably retrace and stop you out, but pullbacks and breakouts increase your payoff more than enough to obtain exceptional returns.
+							%dt How much trading time is required to achieve good results?
+							%dd If you follow a trend following system, very little. Most top traders manage their trades in 10 to 30 minutes per day, which is enough to check the state of the market and update their positions. Trend following, unlike high-frequency trading, uses weekly and daily data and needs little or no attention during the day.
+							%dt What timeframe should I trade?
+							%dd We suggest trading Weekly, Daily and H4 charts. Why? Because we don't like to work that much or paying a fortune in commissions. Intraday trading is very fashionable and exciting, but succumbs to decreasing profit potential and increasing trading commissions. The ultimate winners of scalping are brokers, and most traders resort to intraday charts because their expertise doesn't allow them to find enough trading opportunities in daily charts.
+							%dt Does this indicator implement alerts?
+							%dd Yes, it implements email, sound, push and visual alerts for every trading setup.
+
+				%li.tab-header-and-content
+					=link_to 'Comments (23)', '#', class: 'tab-link'
+					.tab-content
+						%p Content2
+
+			%hr
+			.related-products
+				.view-all=link_to 'view all ›', '#'
+				%h3 Related Products (84)
+				.cols
+					.col
+						.product-block
+							=link_to '#' do
+								.icon
+									=image_tag('http://www.pointzero-trading.com/webroot/images/icons_80/trend_trading_80.png')
+									.price $299
+								.text
+									%h4 Trend Trading
+									%p Indicator designed to profit from trends, pullbacks, inside bar breakouts and possible corrections.
+									%ul.tags
+										%li.mt4 mt4
+										%li.mt5 mt5
+						.product-block
+							=link_to '#' do
+								.icon
+									=image_tag('http://www.pointzero-trading.com/webroot/images/icons_80/trend_trading_80.png')
+									.price $299
+								.text
+									%h4 Trend Trading
+									%p Indicator designed to profit from trends, pullbacks, inside bar breakouts and possible corrections.
+									%ul.tags
+										%li.mt4 mt4
+										%li.mt5 mt5
+					.col
+						.product-block
+							=link_to '#' do
+								.icon
+									=image_tag('http://www.pointzero-trading.com/webroot/images/icons_80/trend_trading_80.png')
+									.price $299
+								.text
+									%h4 Trend Trading
+									%p Indicator designed to profit from trends, pullbacks, inside bar breakouts and possible corrections.
+									%ul.tags
+										%li.mt4 mt4
+										%li.mt5 mt5
+						.product-block
+							=link_to '#' do
+								.icon
+									=image_tag('http://www.pointzero-trading.com/webroot/images/icons_80/trend_trading_80.png')
+									.price $299
+								.text
+									%h4 Trend Trading
+									%p Indicator designed to profit from trends, pullbacks, inside bar breakouts and possible corrections.
+									%ul.tags
+										%li.mt4 mt4
+										%li.mt5 mt5
+					.col
+						.product-block
+							=link_to '#' do
+								.icon
+									=image_tag('http://www.pointzero-trading.com/webroot/images/icons_80/trend_trading_80.png')
+									.price $299
+								.text
+									%h4 Trend Trading
+									%p Indicator designed to profit from trends, pullbacks, inside bar breakouts and possible corrections.
+									%ul.tags
+										%li.mt4 mt4
+										%li.mt5 mt5
+						.product-block
+							=link_to '#' do
+								.icon
+									=image_tag('http://www.pointzero-trading.com/webroot/images/icons_80/trend_trading_80.png')
+									.price $299
+								.text
+									%h4 Trend Trading
+									%p Indicator designed to profit from trends, pullbacks, inside bar breakouts and possible corrections.
+									%ul.tags
+										%li.mt4 mt4
+										%li.mt5 mt5
+
+%footer
+	.container
+		.cols
+			.col30
+				.logo
+					=link_to image_tag('pz-logo.png', alt: 'PZ Logo')
+					%p Our mission is to create top-quality and unique trading tools for the Metatrader Platform. If you like our free indicators and EAs, kindly consider buying a product to support our work.
+			.col30
+				%h4 JOIN OUR MAILING LIST
+				%p Receive free indicators and expert advisors directly to your inbox as soon as they are released.
+				%form.newsletter
+					%input{type: 'text', placeholder: 'Enter your Email...'}
+					%input{type: 'submit', value: '›'}
+			.col30
+				%nav
+					%h4 PRODUCTS
+					%ul
+						%li=link_to 'Metatrader Indicators', '#'
+						%li=link_to 'Metatrader Expert Advisors', '#'
+						%li=link_to 'Free Metatrader Indicators', '#'
+						%li=link_to 'Free Metatrader EAs', '#'
+						%li=link_to 'Free MT4 Indicators and EAs', '#'
+						%li=link_to 'Forex Rebates', '#'
+				.social
+					%h4 SOCIAL
+					%ul
+						%li
+							=link_to '#' do
+								%span.icon=image_tag('icons/fb.svg')
+								Facebook
+						%li
+							=link_to '#' do
+								%span.icon=image_tag('icons/tw.svg')
+								Twitter
+		%nav.legals
+			%ul
+				%li © 2017 This site is owned and operated by PZ Trading Ltd. Registration Number 2531079 (Hong Kong)
+				%li=link_to 'Privacy Policy', '#'
+				%li=link_to 'Terms & Conditions', '#'
+	.dmca
+		.container
+			=image_tag('icons/dmca.png')
+			%p Protection: All original content on Pointzero-trading.com is created by the website owner, including but not limited to text, design, code, images, photographs and videos are considered to be the Intellectual Property of the website owner, whether copyrighted or not, and are protected by DMCA Protection Services using the Digital Millennium Copyright Act Title 17 Chapter 512 (c)(3). Reproduction or re-publication of this content is prohibited without permission.
+
+

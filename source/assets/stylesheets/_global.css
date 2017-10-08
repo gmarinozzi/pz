@@ -1,0 +1,20 @@
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+.cols {
+  display: flex; }
+
+.col25 {
+  flex-basis: 25%; }
+
+.col30 {
+  flex-basis: 33.33%; }
+
+.col50 {
+  flex-basis: 50%; }
+
+.col60 {
+  flex-basis: 66.66%; }
+
+/*# sourceMappingURL=_global.css.map */

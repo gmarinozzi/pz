@@ -1,0 +1,117 @@
+.product{
+  padding-top: 40px;
+  overflow: hidden;
+  .container{
+    display: flex;
+    align-items: flex-start;
+  }
+  aside{
+    flex-basis:300px;
+  }
+  article{
+    h4{
+      margin-top:40px;
+      padding-bottom: 20px;
+    }
+    h3{
+      margin-top:60px;
+      padding-bottom: 20px;
+    }
+    h1 + h3{
+      margin-top:0px;
+    }
+  }
+  .image-border{
+    margin-bottom: 30px;
+    img{
+      padding: 7px;
+      border-radius: 5px;
+      border: 1px solid darken($light-gray, 5%);
+    }
+  }
+  p + .image-border{
+    margin-top: 30px;
+  }
+  .screenshots, .videos{
+    img, .video{
+      width: 100%;
+      padding: 7px;
+      border-radius: 5px;
+      border: 1px solid darken($light-gray, 5%);
+    }
+
+    .cols{
+      align-content:stretch;
+    }
+    .col{
+      padding-right: 10px;
+      flex-grow: 1;
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+    .caption{
+      text-align: center;
+      padding-top: 5px;
+    }
+  }
+  pre{
+    border: 1px solid #ededed;
+    background-color: #fafbfc;
+    font-size: 12px;
+    padding: 30px 40px;
+    border-radius: 6px;
+    color: #666;
+  }
+  .copy-code{
+    border: 1px solid #ededed;
+    background-color: #fafbfc;
+    font-size: 12px;
+    padding: 10px 40px;
+    border-radius: 6px;
+    color: #666;
+    text-align: center;
+    vertical-align: middle;
+    a{
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      line-height: 33px;
+      &:before{
+        content: url('/assets/images/icons/copy.png');
+        zoom:50%;
+        padding-right: 15px;
+        float: left;
+        height: 33px;
+      }
+    }
+  }
+  .related-products{
+    padding-bottom: 60px;
+    .view-all{
+      float: right;
+      font-size: 18px;
+    }
+    .col{
+      padding-right: 30px;
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+  }
+}
+.products-page{
+  h1{
+    padding-bottom: 30px;
+  }
+  .products-list{
+    overflow: hidden;
+    padding-bottom: 40px;
+  }
+  .product-block{
+    width: 25%;
+    padding-right: 30px;
+    display: inline-block;
+    float: left;
+  }
+}

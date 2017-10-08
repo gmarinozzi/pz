@@ -1,0 +1,16 @@
+.product-block .icon {
+  float: left;
+  width: 80px; }
+  .product-block .icon img {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border-radius: 15px 5px 15px 5px;
+    padding: 3px;
+    border: 1px solid #ededed;
+    background-color: #fff; }
+  .product-block .icon .price {
+    font-size: 18px;
+    font-weight: bold; }
+
+/*# sourceMappingURL=_product-block.css.map */

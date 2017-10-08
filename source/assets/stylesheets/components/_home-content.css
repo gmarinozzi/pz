@@ -1,0 +1,22 @@
+.home-content {
+  padding: 20px 0;
+  overflow: hidden; }
+  .home-content h3 {
+    margin: 20px 0; }
+  .home-content .col {
+    padding-right: 30px; }
+    .home-content .col:last-child {
+      padding-right: 0; }
+  .home-content .more {
+    position: relative;
+    border-top: 1px solid #ededed;
+    text-align: center;
+    margin-top: 40px; }
+    .home-content .more a {
+      position: absolute;
+      background-color: #fff;
+      display: inline-block;
+      padding: 0 10px;
+      transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=_home-content.css.map */

@@ -1,0 +1,27 @@
+.home-content{
+  padding: 20px 0;
+  overflow: hidden;
+  h3{
+    margin: 20px 0;
+  }
+  .col{
+    padding-right: 30px;
+    &:last-child{
+      padding-right: 0;
+    }
+  }
+
+  .more{
+    position: relative;
+    border-top: 1px solid #ededed;
+    text-align: center;
+    margin-top: 40px;
+    a{
+      position: absolute;
+      background-color: #fff;
+      display: inline-block;
+      padding: 0 10px;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

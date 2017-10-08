@@ -1,0 +1,311 @@
+---
+title: PZ
+---
+
+%header
+	.container
+		.logo
+			=link_to image_tag('pz-logo.png', alt: 'PZ Logo')
+		%nav
+			%ul
+				%li.submenu
+					=link_to 'Products', '#'
+					%ul
+						%li=link_to 'Indicators', '#'
+						%li=link_to 'Expert Advisors', '#'
+						%li=link_to 'Free Download', '#'
+				%li=link_to 'Cashback Program', '#'
+				%li=link_to 'Help', '#'
+		.social
+			=link_to image_tag('icons/fb.svg', alt: 'facebook'), 'http://www.facebook.com', target: '_blank'
+			=link_to image_tag('icons/tw.svg', alt: 'twitter'), 'http://www.twitter.com', target: '_blank'
+		.search
+			%form
+				%input{type: 'text', placeholder: 'Search..'}
+%section
+	.breadcrumb
+		.container
+			%ul
+				%li=link_to 'Home', '#'
+				%li Forex Rebate Program
+%section
+	.container
+		.hero
+			.caption
+				%h1 GET <span>PAID</span> FOR YOUR TRADES
+				%h3
+					Sign up with our cashback program in less than<br>
+					5 minutes and earn a welcome bonus up to <strong>500$!</strong>
+				.button
+					=link_to '#' do
+						%span SIGN UP FOR FREE
+.cashback-program-content
+	%section.how-it-works
+		.container
+			%h1 How Does it Work?
+			.cols
+				.col50
+					=image_tag('cashback-how-it-works.png')
+				.col50
+					%p When you open a brokerage account through us, the brokerage pays us part of their spread or commission profit for every trade you make as compensation for referring a customer to them. We then share up to 70% of our revenue with you, paying you a cash rebate for your trading volume each month. Your spreads and trading conditions remain the same as if you had opened an account directly with the broker. The only difference is: as our client you earn extra cash per trade, making trading through us more profitable than opening direct with the broker.
+					%ul
+						%li Same Brokers
+						%li Same Spreads
+						%li Same Experience
+						%li Cashback
+	%section.why-how
+		.container
+			.cols
+				.col50
+					%h3 Why choose us?
+					%hr
+					.item
+						.icon=image_tag('icons/cashback/1.png')
+						.text
+							%h4 Cashback on every trade
+							%p Receive a cash rebate for every trade you place, no exceptions. Rebates are paid to your Skrill account whether your trades win or lose, which improves your net result.
+
+					.item
+						.icon=image_tag('icons/cashback/2.png')
+						.text
+							%h4	Highest rebate rates
+							%p We share up to 70% of the rebates amount with you to help you go green every month.
+					.item
+						.icon=image_tag('icons/cashback/3.png')
+						.text
+							%h4 Personal support
+							%p
+							Personal and friendly support for all your broker needs. If you are unsure about what broker to use, feel free to
+							=link_to'contact us', '#'
+							!
+					.item
+						.icon=image_tag('icons/cashback/4.png')
+						.text
+							%h4 Smart broker selection
+							%p We only introduce clients to reputable, regulated and well-capitalized brokers. We have performed extensive due diligence and have thoroughly reviewed the brokers listed to ensure a fair and honest trading experience.
+				.col50
+					%h3 How to start?
+					%hr
+					.item
+						.icon=image_tag('icons/cashback/5.png')
+						.text
+							%h4 1. Sign up
+							%p
+								Enter your full name, country of residence and Skrill email in the
+								=link_to 'sign up page', '#'
+								\. There is no need for passwords or difficult registrations. You will receive a private link to your inbox.
+					.item
+						.icon=image_tag('icons/cashback/6.png')
+						.text
+							%h4 2. Choose a broker
+							%p Choose a broker from the list and open a live account using the link provided in the site.
+					.item
+						.icon=image_tag('icons/cashback/7.png')
+						.text
+							%h4 3. Start trading
+							%p Once your account has been approved, trade your account as you would normally do.
+					.item
+						.icon=image_tag('icons/cashback/8.png')
+						.text
+							%h4 4. Get paid!
+							%p Rebates will be paid automatically to your Paypal account at the end of the next month.
+	%section.free-bonus
+		.container
+			%h1 Free Welcome Bonus up to $500!
+			%p 
+				We are giving away $1,000,000 (One Million US Dollars!) in
+				%strong welcome bonuses up to 500$!<br>
+				Each user receives the bonus, which is automatically paid, after a certain volume of rebates have been accumulated in the account.<br>
+				You can reach this rebate amount trading from several accounts. In the meanwhile, payments are made normally.
+			.button.bg-blue.inline-block
+				=link_to '#' do
+					%span CLAIM MY BONUS
+
+	%section.brokers
+		.container
+			%h1 Brokers We Work With
+			.cols
+				.col60
+					.cards
+						.card
+							.card-content
+								=image_tag('icons/brokers/fxcm.png')
+								%h4 Rebates paid to you:
+								%ul
+									%li 0.1 pips per round turn
+									%li $1 per round lot
+									%li $10 per million
+						.card
+							.card-content
+								=image_tag('icons/brokers/icmarkets.png')
+								%h4 Rebates paid to you:
+								%ul
+									%li 0.1 pips per round turn
+									%li $1 per round lot
+									%li $10 per million
+						.card
+							.card-content
+								=image_tag('icons/brokers/pepperstone.png')
+								%h4 Rebates paid to you:
+								%ul
+									%li 0.1 pips per round turn
+									%li $1 per round lot
+									%li $10 per million
+						.card
+							.card-content
+								=image_tag('icons/brokers/fxpro.png')
+								%h4 Rebates paid to you:
+								%ul
+									%li 0.1 pips per round turn
+									%li $1 per round lot
+									%li $10 per million
+						.card
+							.card-content
+								=image_tag('icons/brokers/fxdd.png')
+								%h4 Rebates paid to you:
+								%ul
+									%li 0.1 pips per round turn
+									%li $1 per round lot
+									%li $10 per million
+						.card
+							.card-content
+								=image_tag('icons/brokers/thinkforex.png')
+								%h4 Rebates paid to you:
+								%ul
+									%li 0.1 pips per round turn
+									%li $1 per round lot
+									%li $10 per million
+						.card
+							.card-content
+								=image_tag('icons/brokers/friedberg.png')
+								%h4 Rebates paid to you:
+								%ul
+									%li 0.1 pips per round turn
+									%li $1 per round lot
+									%li $10 per million
+						.card
+							.card-content
+								=image_tag('icons/brokers/forex.png')
+								%h4 Rebates paid to you:
+								%ul
+									%li 0.1 pips per round turn
+									%li $1 per round lot
+									%li $10 per million
+						.card
+							.card-content
+								=image_tag('icons/brokers/alpha.png')
+								%h4 Rebates paid to you:
+								%ul
+									%li 0.1 pips per round turn
+									%li $1 per round lot
+									%li $10 per million
+				.col30
+					%h3 How much will I earn?
+					%p Your earnings will depend on three things: the rebate rate for the broker you choose, the pairs you trade and the volume you trade on each pair.
+					%h3 Earnings calculator
+					.calculator.card
+						.card-content
+							%h4
+								Volume of each trade:
+								%span 1 Lot
+							%input{type: "range", min: "1", max:"100", step:"1", value:"15"}
+							%h4
+								Trades per day:
+								%span 15 Trades
+							%input{type: "range", min: "1", max:"100", step:"1", value:"15"}
+							%h4
+								Cash back rate:
+								%span 0.5 pips
+							%input{type: "range", min: "1", max:"100", step:"1", value:"15"}
+							%hr
+							.results
+								%h4
+									Monthly Cash Earnings:
+									%strong $525
+								%h4
+									Yearly Cash Earnings:
+									%strong $6300
+	%section.faqs
+		.container
+			%h1 Frequently asked questions
+			%dl
+				%dt How do I receive rebates?
+				%dd All you need to do to receive rebates is to sign up in our rebate program, open a trading account with one or more of our brokers, provide us with your Skrill account and start trading. Rebates will be paid to your Skrill account at the end of the next month.
+
+				%dt Do I need to register?
+				%dd All we need is your full name, country of residence and Skrill email address. You will sent an email with a private cashback link to open brokerage accounts, track your accounts and see historical rebates and payments. You will be up and running in less than a minute.
+
+				%dt Which is the minimum account size?
+				%dd There is no minimum account size at all, except those imposed by the broker itself.
+
+				%dt How are rebates calculated?
+				%dd Generally speaking, rebates are calculated by multiplying the rebate rate of a particular broker by the volume of trading. For instance, if your average daily volume is 1,000,000 (or 10 standard lots) and the rebate rate associated with your broker is 0.7 pips, then you would accrue rebates of $70 per day, or 17,640$ per year.
+
+				%dt Do my spread increase if I open an account with the rebate program?
+				%dd Absolutely not! Your spreads and trading conditions remain the same as if you had opened an account directly with the broker. This reduces your trading costs and improve your trading results.
+
+				%dt When will I receive my rebate payments?
+				%dd Brokers typically provide monthly commission statements by the 15th day of the following month. Once we have these statements, we will calculate your rebates, update your account profile and send out your rebates within a few days, but no later than the 25th day of the following month. In the event we can calculate and process your rebates sooner, we will do so.
+
+				%dt How are rebates paid?
+				%dd Currently rebates are paid via Skrill transfer, no exceptions.
+
+				%dt What do I do if I disagree with the amount of my rebates?
+				%dd In the event you disagree with the amount of your rebate, please feel free to contact us. We are happy to take another look and will immediately correct any mistake.
+
+				%dt What is a round turn?
+				%dd A round turn lot is a completed trade. For example, if you were to buy 0.10 lots of USD/JPY and then sell 0.10 lots USD/JPY lter to close the trade, that would be one round turn.
+
+				%dt Do I get rebates for both winning and losing trades?
+				%dd Yes, you do. You will receive rebates regardless the result of the trade.
+
+				%dt I already have a trading account. Can I still receive rebates?
+				%dd In many cases, the brokers will allow you to amend your account so that it recognizes us as the introducing broker or allow you to open a new account. Feel free to contact us to find out more.
+
+				%dt Do you accept US customers?
+				%dd Sadly, we can't accept US customers. But that does not mean we are not able to help you. Please contact us to know your options as US resident to get rebates from your trades.
+%footer
+	.container
+		.cols
+			.col30
+				.logo
+					=link_to image_tag('pz-logo.png', alt: 'PZ Logo')
+					%p Our mission is to create top-quality and unique trading tools for the Metatrader Platform. If you like our free indicators and EAs, kindly consider buying a product to support our work.
+			.col30
+				%h4 JOIN OUR MAILING LIST
+				%p Receive free indicators and expert advisors directly to your inbox as soon as they are released.
+				%form.newsletter
+					%input{type: 'text', placeholder: 'Enter your Email...'}
+					%input{type: 'submit', value: '›'}
+			.col30
+				%nav
+					%h4 PRODUCTS
+					%ul
+						%li=link_to 'Metatrader Indicators', '#'
+						%li=link_to 'Metatrader Expert Advisors', '#'
+						%li=link_to 'Free Metatrader Indicators', '#'
+						%li=link_to 'Free Metatrader EAs', '#'
+						%li=link_to 'Free MT4 Indicators and EAs', '#'
+						%li=link_to 'Forex Rebates', '#'
+				.social
+					%h4 SOCIAL
+					%ul
+						%li
+							=link_to '#' do
+								%span.icon=image_tag('icons/fb.svg')
+								Facebook
+						%li
+							=link_to '#' do
+								%span.icon=image_tag('icons/tw.svg')
+								Twitter
+		%nav.legals
+			%ul
+				%li © 2017 This site is owned and operated by PZ Trading Ltd. Registration Number 2531079 (Hong Kong)
+				%li=link_to 'Privacy Policy', '#'
+				%li=link_to 'Terms & Conditions', '#'
+	.dmca
+		.container
+			=image_tag('icons/dmca.png')
+			%p Protection: All original content on Pointzero-trading.com is created by the website owner, including but not limited to text, design, code, images, photographs and videos are considered to be the Intellectual Property of the website owner, whether copyrighted or not, and are protected by DMCA Protection Services using the Digital Millennium Copyright Act Title 17 Chapter 512 (c)(3). Reproduction or re-publication of this content is prohibited without permission.
+
+

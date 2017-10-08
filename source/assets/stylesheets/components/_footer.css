@@ -1,0 +1,13 @@
+footer {
+  background-color: #fafbfc;
+  border-top: 1px solid #ededed;
+  padding: 40px 0 20px 0; }
+  footer .logo {
+    padding-right: 60px; }
+    footer .logo img {
+      max-width: 145px;
+      opacity: .5; }
+    footer .logo p {
+      padding: 30px 0; }
+
+/*# sourceMappingURL=_footer.css.map */

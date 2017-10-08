@@ -1,0 +1,210 @@
+---
+title: PZ - Product Page
+---
+
+%header
+	.container
+		.logo
+			=link_to image_tag('pz-logo.png', alt: 'PZ Logo')
+		%nav
+			%ul
+				%li.submenu
+					=link_to 'Products', '#'
+					%ul
+						%li=link_to 'Indicators', '#'
+						%li=link_to 'Expert Advisors', '#'
+						%li=link_to 'Free Download', '#'
+				%li=link_to 'Cashback Program', '#'
+				%li=link_to 'Help', '#'
+		.social
+			=link_to image_tag('icons/fb.svg', alt: 'facebook'), 'http://www.facebook.com', target: '_blank'
+			=link_to image_tag('icons/tw.svg', alt: 'twitter'), 'http://www.twitter.com', target: '_blank'
+		.search
+			%form
+				%input{type: 'text', placeholder: 'Search..'}
+%section
+	.breadcrumb
+		.container
+			%ul
+				%li=link_to 'Home', '#'
+				%li=link_to 'Products', '#'
+				%li=link_to 'Metatrader Expert Advisor', '#'
+				%li Safety Net EA
+%section.product
+	.container
+		%aside
+			=image_tag('http://pointzero-trading.com/webroot/images/icons_300/trend_trading_300.png')
+			%hr
+			.info
+				%dl
+					%dt Published:
+					%dd 28 September 2015
+					%dt Current version:
+					%dd 20.5
+					%dt Updated:
+					%dd 18 May 2017
+		%article
+			%h1 Hello Arthur!
+			%p
+				Thanks for your purchase! This is your permanent and private download link for the Safety Net EA.
+				%br
+				Please, don't share this page with strangers. Kindly find the download file and step-by-step installation guide below.
+
+			%h4 Installation instructions
+			%p Please follow these steps to install the expert advisor.
+			%ol
+				%li
+					%p Open Metatader4.
+				%li
+					%p
+						Download the
+						=link_to 'Safety Net EA expert advisor', '#'
+						to your desktop.
+				%li
+					%p
+						Click File -> Open Data Folder. A browser will pop up.
+						.image-border
+							=image_tag('http://pointzero-trading.com/webroot/images/icons_300/trend_trading_300.png')
+				%li
+					%p Copy the expert files from your desktop to the folder MQL4/Experts. Please do not rename the files! The filename must be PZ_SafetyNetEA_ABCDE12345.ex4 for the expert to work.
+				%li
+					%p
+						Click Tools -> Options -> Expert Advisors and enable DLL permissions.
+						.image-border
+							=image_tag('http://pointzero-trading.com/webroot/images/icons_300/trend_trading_300.png')
+				%li
+					%p Restart your Metatrader4 Platform
+				%li
+					%p Connect to your real or demo account
+				%li
+					%p Load the Safety Net EA EA to the chart from the navigator.
+				%li
+					%p
+						Download the
+						=link_to 'user guide', '#'
+				%li
+					%p Happy Trading!
+			%p
+				If you have problems following the installation guide, open a
+				=link_to 'support ticket', '#'
+
+			%hr
+			.related-products
+				.view-all=link_to 'view all ›', '#'
+				%h3 Related Products (84)
+				.cols
+					.col
+						.product-block
+							=link_to '#' do
+								.icon
+									=image_tag('http://www.pointzero-trading.com/webroot/images/icons_80/trend_trading_80.png')
+									.price $299
+								.text
+									%h4 Trend Trading
+									%p Indicator designed to profit from trends, pullbacks, inside bar breakouts and possible corrections.
+									%ul.tags
+										%li.mt4 mt4
+										%li.mt5 mt5
+						.product-block
+							=link_to '#' do
+								.icon
+									=image_tag('http://www.pointzero-trading.com/webroot/images/icons_80/trend_trading_80.png')
+									.price $299
+								.text
+									%h4 Trend Trading
+									%p Indicator designed to profit from trends, pullbacks, inside bar breakouts and possible corrections.
+									%ul.tags
+										%li.mt4 mt4
+										%li.mt5 mt5
+					.col
+						.product-block
+							=link_to '#' do
+								.icon
+									=image_tag('http://www.pointzero-trading.com/webroot/images/icons_80/trend_trading_80.png')
+									.price $299
+								.text
+									%h4 Trend Trading
+									%p Indicator designed to profit from trends, pullbacks, inside bar breakouts and possible corrections.
+									%ul.tags
+										%li.mt4 mt4
+										%li.mt5 mt5
+						.product-block
+							=link_to '#' do
+								.icon
+									=image_tag('http://www.pointzero-trading.com/webroot/images/icons_80/trend_trading_80.png')
+									.price $299
+								.text
+									%h4 Trend Trading
+									%p Indicator designed to profit from trends, pullbacks, inside bar breakouts and possible corrections.
+									%ul.tags
+										%li.mt4 mt4
+										%li.mt5 mt5
+					.col
+						.product-block
+							=link_to '#' do
+								.icon
+									=image_tag('http://www.pointzero-trading.com/webroot/images/icons_80/trend_trading_80.png')
+									.price $299
+								.text
+									%h4 Trend Trading
+									%p Indicator designed to profit from trends, pullbacks, inside bar breakouts and possible corrections.
+									%ul.tags
+										%li.mt4 mt4
+										%li.mt5 mt5
+						.product-block
+							=link_to '#' do
+								.icon
+									=image_tag('http://www.pointzero-trading.com/webroot/images/icons_80/trend_trading_80.png')
+									.price $299
+								.text
+									%h4 Trend Trading
+									%p Indicator designed to profit from trends, pullbacks, inside bar breakouts and possible corrections.
+									%ul.tags
+										%li.mt4 mt4
+										%li.mt5 mt5
+
+%footer
+	.container
+		.cols
+			.col30
+				.logo
+					=link_to image_tag('pz-logo.png', alt: 'PZ Logo')
+					%p Our mission is to create top-quality and unique trading tools for the Metatrader Platform. If you like our free indicators and EAs, kindly consider buying a product to support our work.
+			.col30
+				%h4 JOIN OUR MAILING LIST
+				%p Receive free indicators and expert advisors directly to your inbox as soon as they are released.
+				%form.newsletter
+					%input{type: 'text', placeholder: 'Enter your Email...'}
+					%input{type: 'submit', value: '›'}
+			.col30
+				%nav
+					%h4 PRODUCTS
+					%ul
+						%li=link_to 'Metatrader Indicators', '#'
+						%li=link_to 'Metatrader Expert Advisors', '#'
+						%li=link_to 'Free Metatrader Indicators', '#'
+						%li=link_to 'Free Metatrader EAs', '#'
+						%li=link_to 'Free MT4 Indicators and EAs', '#'
+						%li=link_to 'Forex Rebates', '#'
+				.social
+					%h4 SOCIAL
+					%ul
+						%li
+							=link_to '#' do
+								%span.icon=image_tag('icons/fb.svg')
+								Facebook
+						%li
+							=link_to '#' do
+								%span.icon=image_tag('icons/tw.svg')
+								Twitter
+		%nav.legals
+			%ul
+				%li © 2017 This site is owned and operated by PZ Trading Ltd. Registration Number 2531079 (Hong Kong)
+				%li=link_to 'Privacy Policy', '#'
+				%li=link_to 'Terms & Conditions', '#'
+	.dmca
+		.container
+			=image_tag('icons/dmca.png')
+			%p Protection: All original content on Pointzero-trading.com is created by the website owner, including but not limited to text, design, code, images, photographs and videos are considered to be the Intellectual Property of the website owner, whether copyrighted or not, and are protected by DMCA Protection Services using the Digital Millennium Copyright Act Title 17 Chapter 512 (c)(3). Reproduction or re-publication of this content is prohibited without permission.
+
+

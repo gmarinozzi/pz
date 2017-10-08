@@ -1,0 +1,24 @@
+.checkout{
+  padding: 40px 0;
+  overflow: hidden;
+  .container{
+    display: flex;
+    align-items: flex-start;
+  }
+  aside{
+    flex-basis:300px;
+  }
+  article{
+    padding-left: 40px;
+    width: 100%;
+    .icon-confirmation{
+      float: left;
+      display: inline-block;
+      width: 45px;
+      margin-right: 20px;
+    }
+  }
+  .button{
+    display: inline-block;
+  }
+}

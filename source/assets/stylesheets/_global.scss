@@ -1,19 +1,19 @@
-body {
-  background-color: $light-gray;
-  color: $medium-gray;
+.container{
+	width: 1200px;
+	margin: 0 auto;
 }
-
-.delete-me {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-
-  .container {
-    text-align: center;
-
-    h1 {
-      font-weight: 200;
-    }
-  }
+.cols{
+	display:flex;
+}
+.col25{
+	flex-basis: 25%;
+}
+.col30{
+	flex-basis: 33.33%;
+}
+.col50{
+	flex-basis: 50%;
+}
+.col60{
+	flex-basis: 66.66%;
 }

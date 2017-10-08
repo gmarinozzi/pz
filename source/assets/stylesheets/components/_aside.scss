@@ -1,0 +1,108 @@
+aside{
+	padding: 20px;
+	border: 1px solid darken($light-gray, 10%);
+	border-radius: 60px 7px 60px 7px;
+	background-color: $light-gray;
+	overflow: hidden;
+	width: 300px;
+	margin-bottom: 40px;
+	> img{
+		width: 260px;
+		border-radius: 40px 4px 40px 4px;
+	}
+	.price{
+		font-size: 30px;
+		text-align: center;
+		font-weight: bold;
+	}
+	.features{
+		h4{
+			font-size: 18px;
+			padding-top:  20px;
+			padding-bottom: 10px;
+			i{
+				display: inline-block;
+				float: left;
+				width: 32px;
+				padding-right: 6px;
+			}
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+	ul{
+		margin: 0;
+		padding-left: 20px;
+		li{
+			list-style: circle;
+			font-size: 14px;
+			padding-top: 10px;
+		}
+	}
+	hr{
+		border-color: darken($light-gray, 10%);
+	}
+	.info{
+		font-size: 14px;
+		dl{
+			dt{
+				float: left;
+			}
+			dd{
+				text-align: right;
+				color: $medium-gray;
+			}
+		}
+	}
+	.guarantee{
+		text-align: center;
+		img{
+			width: 160px;
+		}
+	}
+	.cards{
+		overflow: hidden;
+		padding-bottom: 20px;
+		ul{
+			padding: 20px 0;
+			margin: 0;
+			li{
+				float: left;
+				width: 57px;
+				height: 37px;
+				border-radius: 5px;
+				border: 1px solid darken($light-gray, 10%);
+				list-style: none;
+				margin: 7px 7px 0 0;
+				background: #ffffff;
+				background: -moz-linear-gradient(top, #ffffff 30%, #fafbfc 100%);
+				background: -webkit-linear-gradient(top, #ffffff 30%,#fafbfc 100%);
+				background: linear-gradient(to bottom, #ffffff 30%,#fafbfc 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fafbfc',GradientType=0 );
+				img{vertical-align: middle;}
+			}
+		}
+	}
+	.about{
+		padding: 10px 0;
+		overflow: hidden;
+		img{
+			float: left;
+			padding: 4px;
+			background-color: #fff;
+			border: 1px solid #ededed;
+			border-radius: 5px;
+			margin-right: 10px;
+			width: 70px;
+		}
+		.text{
+			font-size: 12px;
+			line-height: 15px;
+			float: left;
+			strong{
+				font-size: 14px;
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+form.checkout-form {
+  margin-top: 30px; }
+  form.checkout-form label {
+    display: block;
+    font-size: 16px;
+    margin-top: 25px;
+    padding-bottom: 10px; }
+  form.checkout-form fieldset {
+    border: 1px solid #ededed;
+    background-color: #fafbfc;
+    padding: 30px 25%;
+    border-radius: 6px; }
+  form.checkout-form input {
+    width: 100%;
+    border: 1px solid #999;
+    background-color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    line-height: 36px; }
+
+/*# sourceMappingURL=_forms.css.map */

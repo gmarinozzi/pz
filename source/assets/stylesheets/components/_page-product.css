@@ -1,0 +1,23 @@
+.product {
+  padding-top: 40px;
+  overflow: hidden; }
+  .product .container {
+    display: flex; }
+  .product aside {
+    flex-basis: 300px; }
+  .product article {
+    flex-basis: 900px;
+    padding-left: 40px; }
+    .product article h4 {
+      margin-top: 40px;
+      padding-bottom: 20px; }
+    .product article ul, .product article ol {
+      padding: 20px 0 20px 40px; }
+    .product article ul li > ul, .product article ol li > ul {
+      padding-left: 5px; }
+      .product article ul li > ul > li, .product article ol li > ul > li {
+        list-style: none; }
+        .product article ul li > ul > li:before, .product article ol li > ul > li:before {
+          content: "-  "; }
+
+/*# sourceMappingURL=_page-product.css.map */

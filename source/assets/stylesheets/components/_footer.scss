@@ -1,0 +1,115 @@
+footer{
+  border-top: 1px solid #ededed;
+  padding: 40px 0 0px 0;
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #fafbfc 50%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #fafbfc 50%,#ffffff 100%);
+  background: linear-gradient(to bottom, #fafbfc 50%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafbfc', endColorstr='#ffffff',GradientType=0 );
+  .col30{
+  	  padding-right: 80px;
+  	  &:last-child{
+  	  	padding-right: 0;
+  	  }
+  }
+  .logo{
+  	img{
+  		max-width: 145px;
+  		opacity: .5;
+  	}
+  	p{
+  		padding: 20px 0;
+  	}
+  }
+  p{
+  		padding: 10px 0;
+  		color: $medium-gray;
+  		font-size: 14px;
+  	}
+  h4{
+  	font-size: 14px;
+  	letter-spacing: .5pt;
+    padding-bottom: 24px;
+  }
+  ul{
+	  	padding:0;
+	  	margin: 0;
+	  	li{
+	  		font-size: 14px;
+	  		list-style: none;
+	  		a{
+	  			color: $medium-gray;
+	  		}
+	  	}
+	  }
+  nav{
+  	display: inline-block;
+	}
+  .newsletter{
+    position: relative;
+    input[type=text]{
+      border-radius: 20px 0 0 20px;
+      border: 1px solid #ededed;
+      background-color: #fff;
+      line-height: 36px;
+      padding: 0 0 0 20px;
+      font-size: 14px;
+      color: #666;
+      width: 240px;
+      position: absolute;
+
+    }
+    input[type=submit]{
+      border-radius: 0 20px 20px 0;
+      border: 1px solid #ededed;
+      background-color: #fff;
+      line-height: 36px;
+      padding: 0 25px;
+      font-size: 18px;
+      position: absolute;
+      left: 239px;
+      width: auto;
+    }
+  }
+  .social{
+  	float: right;
+  	display: inline-block;
+  	span.icon{
+  		width: 30px;
+  		height: 30px;
+  		display: inline-block;
+  		text-align: center;
+  		opacity:.5;
+  	}
+  }
+  .legals{
+  	border-top: 1px solid #ededed;
+  	padding: 30px 0;
+  	margin-top: 30px;
+  	color: $medium-gray;
+  	width: 100%;
+  	ul li{
+  		float: left;
+  		padding-right: 20px;
+  		border-left: 1px solid $medium-gray;
+  		padding-left: 20px;
+  		line-height: 14px;
+  		&:first-child{
+  			border-left: none;
+  			padding-left: 0;
+  		}
+  	}
+  }
+  .dmca{
+  	padding: 40px 0;
+  	background-color: #f1f3f8;
+  	img{
+  		float: left;
+  		padding-right: 30px;
+  	}
+  	p{
+  		padding: 0;
+  		margin: 0;
+  	}
+  }
+}

@@ -1,0 +1,43 @@
+.page-help{
+  padding-top: 40px;
+  overflow: hidden;
+  .cols{
+    padding-top: 40px;
+    margin-top: 40px 0;
+    justify-content: space-between;
+    .col{
+      border: 1px solid #ededed;
+      width: 47%;
+      h4{
+        font-size: 21px;
+        font-weight: bold;
+        border-bottom: 1px solid #ededed;
+        line-height: 30px;
+        padding: 15px 40px;
+        background: #ffffff;
+        background: -moz-linear-gradient(top, #ffffff 70%, #fafbfc 100%);
+        background: -webkit-linear-gradient(top, #ffffff 70%,#fafbfc 100%);
+        background: linear-gradient(to bottom, #ffffff 70%,#fafbfc 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fafbfc',GradientType=0 );
+      }
+      ul{
+        padding: 30px 40px;
+        li{
+          list-style: none;
+          font-size: 16px;
+          font-weight: bold;
+          color: $blue;
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+  .text-center{
+    text-align: center;
+    margin: 60px 0;
+    a{
+      padding-top: 20px;
+      display: inline-block;
+    }
+  }
+}

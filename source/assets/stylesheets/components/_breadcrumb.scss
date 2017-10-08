@@ -1,0 +1,33 @@
+.breadcrumb{
+  background-color: $light-gray;
+  overflow: hidden;
+  padding: 15px 0;
+  font-size: 13px;
+  border-bottom: 1px solid darken($light-gray, 5%);
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+      display: inline-block;
+      float: left;
+      padding: 0 15px 0 0;
+      &:after{
+        content: '›';
+        color: $medium-gray;
+        padding-left: 15px;
+      }
+      &:last-child{
+        color: $medium-gray;
+        &:after{
+          content: '';
+        }
+      }
+      a{
+        color: $dark-gray;
+        &:hover{
+          color: $blue;
+        }
+      }
+    }
+  }
+}

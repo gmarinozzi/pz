@@ -1,0 +1,125 @@
+---
+title: PZ - Checkout step2
+---
+
+%header
+	.container
+		.logo
+			=link_to image_tag('pz-logo.png', alt: 'PZ Logo')
+		%nav
+			%ul
+				%li.submenu
+					=link_to 'Products', '#'
+					%ul
+						%li=link_to 'Indicators', '#'
+						%li=link_to 'Expert Advisors', '#'
+						%li=link_to 'Free Download', '#'
+				%li=link_to 'Cashback Program', '#'
+				%li=link_to 'Help', '#'
+		.social
+			=link_to image_tag('icons/fb.svg', alt: 'facebook'), 'http://www.facebook.com', target: '_blank'
+			=link_to image_tag('icons/tw.svg', alt: 'twitter'), 'http://www.twitter.com', target: '_blank'
+		.search
+			%form
+				%input{type: 'text', placeholder: 'Search..'}
+%section
+	.breadcrumb
+		.container
+			%ul
+				%li=link_to 'Home', '#'
+				%li=link_to 'Products', '#'
+				%li=link_to 'Metatrader Expert Advisor', '#'
+				%li Safety Net EA
+%section.checkout
+	.container
+		%aside
+			.guarantee=image_tag('icons/guarantee.png')
+			.cards
+				%ul
+					%li=image_tag('icons/cards/paypal.png')
+					%li=image_tag('icons/cards/visa.png')
+					%li=image_tag('icons/cards/mastercard.png')
+					%li=image_tag('icons/cards/skrill.png')
+					%li=image_tag('icons/cards/bitcoin.png')
+					%li=image_tag('icons/cards/diamante.png')
+					%li=image_tag('icons/cards/pound.png')
+
+		%article
+			%nav.checkout-nav
+				%ul
+					%li
+						=link_to '01 ORDER', '#', class: 'active'
+					%li
+						=link_to '02 CHECKOUT', '#', class: 'active'
+					%li
+						=link_to '03 PAYMENT', '#'
+					%li
+						=link_to '04 CONFIRMATION', '#'
+
+			%h1 Checkout
+			%h3
+				Review your order, and make sure everything is ok or
+				=link_to 'go back', '#'
+			%hr
+			%dl
+				%dt Full Name
+				%dd Arturo Lopez Perez
+				%dt Email address
+				%dd flaab_mrlinux@hotmail.com
+				%dt Product
+				%dd
+					Grid Treading EA
+					%small (1 license)
+			%hr
+			%strong SUBTOTAL:
+			$224.00 USD
+			%small (discount applied)
+			%hr
+			.button.bg-blue.btn-large
+				=link_to 'Payment', '#'
+
+%footer
+	.container
+		.cols
+			.col30
+				.logo
+					=link_to image_tag('pz-logo.png', alt: 'PZ Logo')
+					%p Our mission is to create top-quality and unique trading tools for the Metatrader Platform. If you like our free indicators and EAs, kindly consider buying a product to support our work.
+			.col30
+				%h4 JOIN OUR MAILING LIST
+				%p Receive free indicators and expert advisors directly to your inbox as soon as they are released.
+				%form.newsletter
+					%input{type: 'text', placeholder: 'Enter your Email...'}
+					%input{type: 'submit', value: '›'}
+			.col30
+				%nav
+					%h4 PRODUCTS
+					%ul
+						%li=link_to 'Metatrader Indicators', '#'
+						%li=link_to 'Metatrader Expert Advisors', '#'
+						%li=link_to 'Free Metatrader Indicators', '#'
+						%li=link_to 'Free Metatrader EAs', '#'
+						%li=link_to 'Free MT4 Indicators and EAs', '#'
+						%li=link_to 'Forex Rebates', '#'
+				.social
+					%h4 SOCIAL
+					%ul
+						%li
+							=link_to '#' do
+								%span.icon=image_tag('icons/fb.svg')
+								Facebook
+						%li
+							=link_to '#' do
+								%span.icon=image_tag('icons/tw.svg')
+								Twitter
+		%nav.legals
+			%ul
+				%li © 2017 This site is owned and operated by PZ Trading Ltd. Registration Number 2531079 (Hong Kong)
+				%li=link_to 'Privacy Policy', '#'
+				%li=link_to 'Terms & Conditions', '#'
+	.dmca
+		.container
+			=image_tag('icons/dmca.png')
+			%p Protection: All original content on Pointzero-trading.com is created by the website owner, including but not limited to text, design, code, images, photographs and videos are considered to be the Intellectual Property of the website owner, whether copyrighted or not, and are protected by DMCA Protection Services using the Digital Millennium Copyright Act Title 17 Chapter 512 (c)(3). Reproduction or re-publication of this content is prohibited without permission.
+
+
