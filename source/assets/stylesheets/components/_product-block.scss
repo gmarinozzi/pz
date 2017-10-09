@@ -60,4 +60,16 @@
       }
     }
   }
+  @media only screen and (min-width: 960px) and (max-width: 1279px)  {
+    .icon{
+      width: 60px;
+      img{
+        width:60px;
+        height: 60px;
+      }
+    }
+    .text{
+      padding-left: 65px;
+    }
+  }
 }

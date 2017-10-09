@@ -42,3 +42,19 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 250ms;
 $base-timing: ease;
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    &:before{
+      display: block;
+      content: " ";
+      width: 100%;
+      padding-top: ($height / $width) * 100%;
+    }
+
+    > img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+}
