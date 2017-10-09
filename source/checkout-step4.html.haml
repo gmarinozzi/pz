@@ -11,11 +11,11 @@ title: PZ - Checkout step4
 				%li.submenu
 					=link_to 'Products', 'products'
 					%ul
-						%li=link_to 'Indicators', '/products'
-						%li=link_to 'Expert Advisors', '/products'
-						%li=link_to 'Free Download', '/products'
-				%li=link_to 'Cashback Program', '/cashback-program'
-				%li=link_to 'Help', '/help-page'
+						%li=link_to 'Indicators', 'products'
+						%li=link_to 'Expert Advisors', 'products'
+						%li=link_to 'Free Download', 'products'
+				%li=link_to 'Cashback Program', 'cashback-program'
+				%li=link_to 'Help', 'help-page'
 		.social
 			=link_to image_tag('icons/fb.svg', alt: 'facebook'), 'http://www.facebook.com', target: '_blank'
 			=link_to image_tag('icons/tw.svg', alt: 'twitter'), 'http://www.twitter.com', target: '_blank'
@@ -27,8 +27,8 @@ title: PZ - Checkout step4
 		.container
 			%ul
 				%li=link_to 'Home', '/'
-				%li=link_to 'Products', '/products'
-				%li=link_to 'Metatrader Expert Advisor', '/products'
+				%li=link_to 'Products', 'products'
+				%li=link_to 'Metatrader Expert Advisor', 'products'
 				%li Safety Net EA
 %section.checkout
 	.container
@@ -48,13 +48,13 @@ title: PZ - Checkout step4
 			%nav.checkout-nav
 				%ul
 					%li
-						=link_to '01 ORDER', '/checkout-step1', class: 'active'
+						=link_to '01 ORDER', 'checkout-step1', class: 'active'
 					%li
-						=link_to '02 CHECKOUT', '/checkout-step3', class: 'active'
+						=link_to '02 CHECKOUT', 'checkout-step3', class: 'active'
 					%li
 						=link_to '03 PAYMENT', '#', class: 'active'
 					%li
-						=link_to '04 CONFIRMATION', '/checkout-step4', class: 'active'
+						=link_to '04 CONFIRMATION', 'checkout-step4', class: 'active'
 
 			.icon-confirmation=image_tag('icons/thanks.png')
 			%h1 Thanks for your purchase!
