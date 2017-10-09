@@ -768,7 +768,8 @@ header {
       padding: 10px 30px;
       display: inline-block;
       border-radius: 5px;
-      text-align: center; }
+      text-align: center;
+      margin-top: 20px; }
       .hero .caption .button a {
         color: #fff;
         display: block; }
@@ -1138,6 +1139,7 @@ aside {
         border: 1px solid #dae2e9;
         list-style: none;
         margin: 7px 7px 0 0;
+        padding-top: 0;
         background: #ffffff;
         background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #ffffff), to(#fafbfc));
         background: linear-gradient(to bottom, #ffffff 30%, #fafbfc 100%);
