@@ -5,17 +5,17 @@ title: PZ - Checkout step2
 %header
 	.container
 		.logo
-			=link_to image_tag('pz-logo.png', alt: 'PZ Logo')
+			=link_to image_tag('pz-logo.png', alt: 'PZ Logo'), '/'
 		%nav
 			%ul
 				%li.submenu
-					=link_to 'Products', '#'
+					=link_to 'Products', 'products'
 					%ul
-						%li=link_to 'Indicators', '#'
-						%li=link_to 'Expert Advisors', '#'
-						%li=link_to 'Free Download', '#'
-				%li=link_to 'Cashback Program', '#'
-				%li=link_to 'Help', '#'
+						%li=link_to 'Indicators', '/products'
+						%li=link_to 'Expert Advisors', '/products'
+						%li=link_to 'Free Download', '/products'
+				%li=link_to 'Cashback Program', '/cashback-program'
+				%li=link_to 'Help', '/help-page'
 		.social
 			=link_to image_tag('icons/fb.svg', alt: 'facebook'), 'http://www.facebook.com', target: '_blank'
 			=link_to image_tag('icons/tw.svg', alt: 'twitter'), 'http://www.twitter.com', target: '_blank'
@@ -26,9 +26,9 @@ title: PZ - Checkout step2
 	.breadcrumb
 		.container
 			%ul
-				%li=link_to 'Home', '#'
-				%li=link_to 'Products', '#'
-				%li=link_to 'Metatrader Expert Advisor', '#'
+				%li=link_to 'Home', '/'
+				%li=link_to 'Products', '/products'
+				%li=link_to 'Metatrader Expert Advisor', '/products'
 				%li Safety Net EA
 %section.checkout
 	.container
@@ -48,13 +48,13 @@ title: PZ - Checkout step2
 			%nav.checkout-nav
 				%ul
 					%li
-						=link_to '01 ORDER', '#', class: 'active'
+						=link_to '01 ORDER', '/checkout-step1', class: 'active'
 					%li
-						=link_to '02 CHECKOUT', '#', class: 'active'
+						=link_to '02 CHECKOUT', '/checkout-step2', class: 'active'
 					%li
 						=link_to '03 PAYMENT', '#'
 					%li
-						=link_to '04 CONFIRMATION', '#'
+						=link_to '04 CONFIRMATION', '/checkout-step4'
 
 			%h1 Checkout
 			%h3
