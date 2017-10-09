@@ -5,17 +5,17 @@ title: PZ - Help Page
 %header
 	.container
 		.logo
-			=link_to image_tag('pz-logo.png', alt: 'PZ Logo'), './'
+			=link_to image_tag('pz-logo.png', alt: 'PZ Logo'), '/'
 		%nav
 			%ul
 				%li.submenu
-					=link_to 'Products', '.products'
+					=link_to 'Products', 'products'
 					%ul
-						%li=link_to 'Indicators', './products'
-						%li=link_to 'Expert Advisors', './products'
-						%li=link_to 'Free Download', './products'
-				%li=link_to 'Cashback Program', './cashback-program'
-				%li=link_to 'Help', './help-page'
+						%li=link_to 'Indicators', '/products'
+						%li=link_to 'Expert Advisors', '/products'
+						%li=link_to 'Free Download', '/products'
+				%li=link_to 'Cashback Program', '/cashback-program'
+				%li=link_to 'Help', '/help-page'
 		.social
 			=link_to image_tag('icons/fb.svg', alt: 'facebook'), 'http://www.facebook.com', target: '_blank'
 			=link_to image_tag('icons/tw.svg', alt: 'twitter'), 'http://www.twitter.com', target: '_blank'
@@ -26,7 +26,7 @@ title: PZ - Help Page
 	.breadcrumb
 		.container
 			%ul
-				%li=link_to 'Home', './'
+				%li=link_to 'Home', '/'
 				%li Help
 %section.page-help
 	.container
@@ -117,7 +117,7 @@ title: PZ - Help Page
 		.text-center
 			%h3 Can’t find the answer to your question? We are happy to help.
 			%p
-				%strong=link_to 'SUBMIT A TICKET ›', './ticket'
+				%strong=link_to 'SUBMIT A TICKET ›', '/ticket'
 
 %footer
 	.container
