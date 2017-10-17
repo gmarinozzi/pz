@@ -4,17 +4,19 @@
   .checkout .container {
     display: flex;
     align-items: flex-start; }
-  .checkout aside {
-    flex-basis: 300px; }
-  .checkout article {
-    padding-left: 40px;
-    width: 100%; }
-    .checkout article .icon-confirmation {
-      float: left;
-      display: inline-block;
-      width: 45px;
-      margin-right: 20px; }
+  .checkout article .icon-confirmation {
+    float: left;
+    display: inline-block;
+    width: 45px;
+    margin-right: 20px; }
   .checkout .button {
     display: inline-block; }
+  @media only screen and (min-width: 320px) and (max-width: 759px) {
+    .checkout .container {
+      flex-direction: column; }
+      .checkout .container aside {
+        order: 2; }
+      .checkout .container article {
+        order: 1; } }
 
 /*# sourceMappingURL=_page-checkout.css.map */

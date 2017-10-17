@@ -7,10 +7,10 @@ footer{
   background: linear-gradient(to bottom, #fafbfc 50%,#ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafbfc', endColorstr='#ffffff',GradientType=0 );
   .col30{
-  	  padding-right: 80px;
-  	  &:last-child{
-  	  	padding-right: 0;
-  	  }
+	  padding-right: 80px;
+	  &:last-child{
+	  	padding-right: 0;
+	  }
   }
   .logo{
   	img{
@@ -45,8 +45,15 @@ footer{
   nav{
   	display: inline-block;
 	}
+  .social-mini{
+    a{
+      padding: 0 10px;
+      display: inline-block;
+    }
+  }
   .newsletter{
     position: relative;
+    height: 60px;
     input[type=text]{
       border-radius: 20px 0 0 20px;
       border: 1px solid #ededed;
@@ -111,5 +118,33 @@ footer{
   		padding: 0;
   		margin: 0;
   	}
+  }
+  @media only screen and (min-width: 960px)  {
+    .social{
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 959px)  {
+    .col30{
+      padding-right: 30px;
+    }
+    .social{
+      display: none;
+    }
+    .newsletter{
+      input[type=text]{
+        width: 160px;
+      }
+      input[type=submit]{
+        padding: 0 15px;
+        left: 159px;
+      }
+    }
+  }
+  @media only screen and (min-width: 320px) and (max-width: 759px) {
+    .col30{
+      padding-bottom: 30px;
+    }
   }
 }

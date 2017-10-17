@@ -29,5 +29,9 @@
       text-transform: uppercase;
       font-size: 11px;
       color: #777; }
+  @media only screen and (min-width: 320px) and (max-width: 759px) {
+    .testimonials .col {
+      padding-right: 0;
+      padding-bottom: 30px; } }
 
 /*# sourceMappingURL=_testimonials.css.map */

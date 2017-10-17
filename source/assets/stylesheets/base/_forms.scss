@@ -12,6 +12,12 @@ form{
     padding: 40px 25%;
     border-radius: 6px;
     margin-bottom: 20px;
+    @media only screen and (min-width: 320px) and (max-width: 959px) {
+      padding: 30px 50px;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 759px) {
+      padding: 30px 20px;
+    }
   }
   input{
     width: 100%;
@@ -76,7 +82,8 @@ form{
       font-size: 16px;
       user-select: none;
       padding-left: 35px;
-      line-height: 30px;
+      padding-top: 5px;
+      line-height: 20px;
     }
     .helper:before {
       content: '';
@@ -116,7 +123,7 @@ form{
     }
 
     .checkbox label {
-      min-height: 24px;
+      min-height: 40px;
       padding-left: 35px;
       margin-bottom: 0;
       font-weight: normal;
@@ -136,6 +143,13 @@ form{
       color: #fff;
       font-size: 24px;
       padding: 15px 50px;
+      @media only screen and (min-width: 320px) and (max-width: 1199px) {
+        float: none;
+        margin-top: 20px;
+      }
+    }
+    @media only screen and (min-width: 320px) and (max-width: 759px) {
+      display: block;
     }
   }
 }

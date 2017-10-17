@@ -2,20 +2,21 @@
 title: PZ - Help Page
 ---
 
-%header
+%header.navigation
 	.container
 		.logo
 			=link_to image_tag('pz-logo.png', alt: 'PZ Logo'), '/'
-		%nav
-			%ul
-				%li.submenu
-					=link_to 'Products', 'products'
-					%ul
+		#js-mobile-menu.navigation-menu-button=link_to '&#9776;', 'javascript:void(0)'
+		%nav{:role => "navigation"}
+			%ul#js-navigation-menu.navigation-menu.show
+				%li#js-navigation-more.nav-link.more
+					=link_to 'Products', 'javascript:void(0)'
+					%ul.submenu
 						%li=link_to 'Indicators', 'products'
 						%li=link_to 'Expert Advisors', 'products'
 						%li=link_to 'Free Download', 'products'
-				%li=link_to 'Cashback Program', 'cashback-program'
-				%li=link_to 'Help', 'help-page'
+				%li.nav-link=link_to 'Cashback Program', 'cashback-program'
+				%li.nav-link=link_to 'Help', 'help-page'
 		.social
 			=link_to image_tag('icons/fb.svg', alt: 'facebook'), 'http://www.facebook.com', target: '_blank'
 			=link_to image_tag('icons/tw.svg', alt: 'twitter'), 'http://www.twitter.com', target: '_blank'
@@ -126,6 +127,9 @@ title: PZ - Help Page
 				.logo
 					=link_to image_tag('pz-logo.png', alt: 'PZ Logo')
 					%p Our mission is to create top-quality and unique trading tools for the Metatrader Platform. If you like our free indicators and EAs, kindly consider buying a product to support our work.
+					.social-mini.only-mobile
+						=link_to image_tag('icons/fb.svg'), '#'
+						=link_to image_tag('icons/tw.svg'), '#'
 			.col30
 				%h4 JOIN OUR MAILING LIST
 				%p Receive free indicators and expert advisors directly to your inbox as soon as they are released.
@@ -162,6 +166,9 @@ title: PZ - Help Page
 		.container
 			=image_tag('icons/dmca.png')
 			%p Protection: All original content on Pointzero-trading.com is created by the website owner, including but not limited to text, design, code, images, photographs and videos are considered to be the Intellectual Property of the website owner, whether copyrighted or not, and are protected by DMCA Protection Services using the Digital Millennium Copyright Act Title 17 Chapter 512 (c)(3). Reproduction or re-publication of this content is prohibited without permission.
+
+
+
 .modal
 	%input#modal-1.modal-state{:type => "checkbox"}
 	.modal-fade-screen

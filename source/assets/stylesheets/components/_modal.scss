@@ -146,7 +146,15 @@
     top: 0.5em;
   }
 }
-
+.modal-fade-screen-picture { // overlay
+    @extend .modal-fade-screen;
+    .modal-inner{
+      padding: 40px 20px;
+      .video{
+        margin-top: 20px;
+      }
+    }
+  }
 .modal-open {
   overflow: hidden;
 }

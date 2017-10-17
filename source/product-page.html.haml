@@ -2,20 +2,21 @@
 title: PZ - Product Page
 ---
 
-%header
+%header.navigation
 	.container
 		.logo
 			=link_to image_tag('pz-logo.png', alt: 'PZ Logo'), '/'
-		%nav
-			%ul
-				%li.submenu
-					=link_to 'Products', 'products'
-					%ul
+		#js-mobile-menu.navigation-menu-button=link_to '&#9776;', 'javascript:void(0)'
+		%nav{:role => "navigation"}
+			%ul#js-navigation-menu.navigation-menu.show
+				%li#js-navigation-more.nav-link.more
+					=link_to 'Products', 'javascript:void(0)'
+					%ul.submenu
 						%li=link_to 'Indicators', 'products'
 						%li=link_to 'Expert Advisors', 'products'
 						%li=link_to 'Free Download', 'products'
-				%li=link_to 'Cashback Program', 'cashback-program'
-				%li=link_to 'Help', 'help-page'
+				%li.nav-link=link_to 'Cashback Program', 'cashback-program'
+				%li.nav-link=link_to 'Help', 'help-page'
 		.social
 			=link_to image_tag('icons/fb.svg', alt: 'facebook'), 'http://www.facebook.com', target: '_blank'
 			=link_to image_tag('icons/tw.svg', alt: 'twitter'), 'http://www.twitter.com', target: '_blank'
@@ -91,7 +92,9 @@ title: PZ - Product Page
 
 			%ul.product-tabs
 				%li.tab-header-and-content
-					=link_to 'Overview', '#', class: 'tab-link is-active'
+					=link_to '#', class: 'tab-link is-active' do
+						%b &#8505;
+						%span Overview
 					.tab-content
 						%input.read-more-state#post-1{ type: 'checkbox'}
 						.read-more-wrap
@@ -133,30 +136,34 @@ title: PZ - Product Page
 						%label.read-more-trigger{:for => "post-1"}
 						.screenshots
 							%h3 Screenshots
-							=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+							%label{:for => "modal-1"}
+								.modal-trigger=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
 							.cols
 								.col
-									=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+									%label{:for => "modal-1"}
+										.modal-trigger=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
 								.col
-									=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+									%label{:for => "modal-1"}
+										.modal-trigger=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
 								.col
-									=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+									%label{:for => "modal-1"}
+										.modal-trigger=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
 							%h3 Videos
 							.cols
 								.col
-									.video
-										.video-wrapper
-											%iframe{:allowfullscreen => "", :frameborder => "0", :src => "http://www.youtube.com/embed/8ItNE_DX6Cc?showinfo=0&iv_load_policy=3&controls=0"}
-									.caption Safety Net EA 20.2
+									%label{:for => "modal-2"}
+										.modal-trigger=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+										.caption Safety Net EA 20.2
 								.col
-									.video
-										.video-wrapper
-											%iframe{:allowfullscreen => "", :frameborder => "0", :src => "http://www.youtube.com/embed/8ItNE_DX6Cc?showinfo=0&iv_load_policy=3&controls=0"}
-									.caption Safety Net EA 20.2
+									%label{:for => "modal-2"}
+										.modal-trigger=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+										.caption Safety Net EA 20.2
 
 
 				%li.tab-header-and-content
-					=link_to 'Input parameters', '#', class: 'tab-link'
+					=link_to '#', class: 'tab-link' do
+						%b ≡
+						%span Input parameters
 					.tab-content
 						.image-border=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/trend_trading_params.png')
 						%p When loading the indicator to any chart, you will be presented with a set of options as input parameters. Don't despair if you think they are too many, because parameters are grouped into self-explanatory blocks.
@@ -168,7 +175,9 @@ title: PZ - Product Page
 							%dt Alerts
 							%ddEnable display/email/push/sound alerts for all the trading setups enabled.
 				%li.tab-header-and-content
-					=link_to 'Developers', '#', class: 'tab-link'
+					=link_to '#', class: 'tab-link' do
+						%b &lt;/&gt;
+						%span Developers
 					.tab-content
 						%p
 							In order to build your expert advisor, you can read data from the indicator using the iCustom() function as exemplified below.
@@ -246,7 +255,9 @@ title: PZ - Product Page
 						.copy-code
 							=link_to 'Copy the Code to Clipboard', '#'
 				%li.tab-header-and-content
-					=link_to 'FAQs', '#', class: 'tab-link'
+					=link_to '#', class: 'tab-link' do
+						%b ?
+						%span FAQs
 					.tab-content
 						%dl
 							%dt Does the indicator repaint or backpaint?
@@ -269,12 +280,14 @@ title: PZ - Product Page
 							%dd Yes, it implements email, sound, push and visual alerts for every trading setup.
 
 				%li.tab-header-and-content
-					=link_to 'Comments (23)', '#', class: 'tab-link'
+					=link_to '#', class: 'tab-link' do
+						%b &#128172;
+						%span Comments (23)
 					.tab-content
 						%p Content2
 
-			%hr
 			.related-products
+				%hr
 				.view-all=link_to 'view all ›', '#'
 				%h3 Related Products (84)
 				.cols
@@ -355,6 +368,9 @@ title: PZ - Product Page
 				.logo
 					=link_to image_tag('pz-logo.png', alt: 'PZ Logo')
 					%p Our mission is to create top-quality and unique trading tools for the Metatrader Platform. If you like our free indicators and EAs, kindly consider buying a product to support our work.
+					.social-mini.only-mobile
+						=link_to image_tag('icons/fb.svg'), '#'
+						=link_to image_tag('icons/tw.svg'), '#'
 			.col30
 				%h4 JOIN OUR MAILING LIST
 				%p Receive free indicators and expert advisors directly to your inbox as soon as they are released.
@@ -393,3 +409,19 @@ title: PZ - Product Page
 			%p Protection: All original content on Pointzero-trading.com is created by the website owner, including but not limited to text, design, code, images, photographs and videos are considered to be the Intellectual Property of the website owner, whether copyrighted or not, and are protected by DMCA Protection Services using the Digital Millennium Copyright Act Title 17 Chapter 512 (c)(3). Reproduction or re-publication of this content is prohibited without permission.
 
 
+
+.modal
+	%input#modal-1.modal-state{:type => "checkbox"}
+	.modal-fade-screen-picture
+		.modal-inner
+			.modal-close{:for => "modal-1"}
+			=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+			%p Image caption
+.modal
+	%input#modal-2.modal-state{:type => "checkbox"}
+	.modal-fade-screen-picture
+		.modal-inner
+			.modal-close{:for => "modal-2"}
+			.video
+				.video-wrapper
+					%iframe{:allowfullscreen => "", :frameborder => "0", :src => "http://www.youtube.com/embed/8ItNE_DX6Cc?showinfo=0&iv_load_policy=3&controls=0"}

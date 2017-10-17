@@ -19,10 +19,7 @@
 
   .tab-header-and-content {
     list-style: none;
-
-    @include media($tab-mode) {
-      display: inline;
-    }
+    display: inline;
   }
 
   .tab-link {
@@ -31,15 +28,18 @@
     border-top: 1px solid darken($light-gray, 5%)!important;
     border-bottom: none;
     color: $medium-gray;
-    display: block;
-    padding: ($base-spacing / 2) $gutter;
+    display: inline-block;
+    padding: 10px 17px;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: .5pt;
 
-    @include media($tab-mode) {
-      display: inline-block;
+    b{ display: none; font-size: 18px;}
+    span{display: block;}
+    @media only screen and (min-width: 320px) and (max-width: 959px)  {
+    b{ display: block;}
+    span{display: none;}
     }
 
     &:hover {
@@ -54,12 +54,9 @@
       border-bottom: 0;
       background-color: #fff;
       color: $dark-gray;
-
-      @include media($tab-mode) {
-        border: $tab-border;
-        border-bottom-color: $tab-active-background;
-        margin-bottom: -1px;
-      }
+      border: $tab-border;
+      border-bottom-color: $tab-active-background;
+      margin-bottom: -1px;
     }
   }
 
@@ -68,9 +65,7 @@
     padding: 40px 0;
     width: 100%;
 
-    @include media($tab-mode) {
-      border-top: $tab-border;
-      float: left;
-    }
+    border-top: $tab-border;
+    float: left;
   }
 }

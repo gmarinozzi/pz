@@ -33,6 +33,9 @@
       }
     }
   .how-it-works{
+    img{
+      max-width: 80%;
+    }
     padding: 60px 0;
     ul{
       padding: 0;
@@ -71,12 +74,13 @@
     }
     .item{
       padding: 15px 0;
+      display: flex;
       .icon{
-        display: inline-block;
-        float: left;
+        flex-basis: 20%;
+        padding-right: 20px;
       }
       .text{
-        padding-left: 100px;
+        flex-basis: 80%;
       }
     }
   }
@@ -161,6 +165,18 @@
         }
       }
     }
+    @media only screen and (min-width: 320px) and (max-width: 959px)  {
+      .cols{
+        display: block;
+      }
+      .col60, .col30{
+        width: 100%;
+      }
+      .cards{
+        padding-right: 0;
+        padding-bottom: 30px;
+      }
+    }
   }
   .faqs{
     text-align: center;
@@ -176,6 +192,11 @@
         margin-left: 0;
         padding-bottom: 20px;
 
+      }
+    }
+    @media only screen and (min-width: 320px) and (max-width: 959px)  {
+      dl{
+        padding: 0 5%;
       }
     }
   }
