@@ -8,23 +8,24 @@
 <link href="../assets/stylesheets/application.css" rel="stylesheet" />
 </head>
 <body class='product-page product-page_index'>
-<header>
+<header class='navigation'>
 <div class='container'>
 <div class='logo'>
 <a href="/"><img src="../assets/images/pz-logo.png" alt="PZ Logo" /></a>
 </div>
-<nav>
-<ul>
-<li class='submenu'>
-<a href="../products/">Products</a>
-<ul>
+<div class='navigation-menu-button' id='js-mobile-menu'><a href="javascript:void(0)">&#9776;</a></div>
+<nav role='navigation'>
+<ul class='navigation-menu show' id='js-navigation-menu'>
+<li class='nav-link more' id='js-navigation-more'>
+<a href="javascript:void(0)">Products</a>
+<ul class='submenu'>
 <li><a href="../products/">Indicators</a></li>
 <li><a href="../products/">Expert Advisors</a></li>
 <li><a href="../products/">Free Download</a></li>
 </ul>
 </li>
-<li><a href="../cashback-program/">Cashback Program</a></li>
-<li><a href="../help-page/">Help</a></li>
+<li class='nav-link'><a href="../cashback-program/">Cashback Program</a></li>
+<li class='nav-link'><a href="../help-page/">Help</a></li>
 </ul>
 </nav>
 <div class='social'>
@@ -117,8 +118,9 @@ What this tool is not?
 <h3>Metatrader (MT4) Expert Advisor</h3>
 <ul class='product-tabs'>
 <li class='tab-header-and-content'>
-<a href="#" class="tab-link is-active">Overview</a>
-<div class='tab-content'>
+<a href="#" class="tab-link is-active"><b>&#8505;</b>
+<span>Overview</span>
+</a><div class='tab-content'>
 <input class='read-more-state' id='post-1' type='checkbox'>
 <div class='read-more-wrap'>
 <p>The <strong>PZ Safety Net EA</strong> turns your losing trades into winners using a unique imbalanced hedging strategy which places alternative pending orders until an exit point is reached.</p>
@@ -166,43 +168,48 @@ To decrease the risk allocation, perform one or more of the following measures.
 <label class='read-more-trigger' for='post-1'></label>
 <div class='screenshots'>
 <h3>Screenshots</h3>
-<img src="http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg" alt="Main" />
+<label for='modal-1'>
+<div class='modal-trigger'><img src="http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg" alt="Main" /></div>
+</label>
 <div class='cols'>
 <div class='col'>
-<img src="http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg" alt="Main" />
+<label for='modal-1'>
+<div class='modal-trigger'><img src="http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg" alt="Main" /></div>
+</label>
 </div>
 <div class='col'>
-<img src="http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg" alt="Main" />
+<label for='modal-1'>
+<div class='modal-trigger'><img src="http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg" alt="Main" /></div>
+</label>
 </div>
 <div class='col'>
-<img src="http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg" alt="Main" />
+<label for='modal-1'>
+<div class='modal-trigger'><img src="http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg" alt="Main" /></div>
+</label>
 </div>
 </div>
 <h3>Videos</h3>
 <div class='cols'>
 <div class='col'>
-<div class='video'>
-<div class='video-wrapper'>
-<iframe allowfullscreen='' frameborder='0' src='http://www.youtube.com/embed/8ItNE_DX6Cc?showinfo=0&amp;iv_load_policy=3&amp;controls=0'></iframe>
-</div>
-</div>
+<label for='modal-2'>
+<div class='modal-trigger'><img src="http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg" alt="Main" /></div>
 <div class='caption'>Safety Net EA 20.2</div>
+</label>
 </div>
 <div class='col'>
-<div class='video'>
-<div class='video-wrapper'>
-<iframe allowfullscreen='' frameborder='0' src='http://www.youtube.com/embed/8ItNE_DX6Cc?showinfo=0&amp;iv_load_policy=3&amp;controls=0'></iframe>
-</div>
-</div>
+<label for='modal-2'>
+<div class='modal-trigger'><img src="http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg" alt="Main" /></div>
 <div class='caption'>Safety Net EA 20.2</div>
+</label>
 </div>
 </div>
 </div>
 </div>
 </li>
 <li class='tab-header-and-content'>
-<a href="#" class="tab-link">Input parameters</a>
-<div class='tab-content'>
+<a href="#" class="tab-link"><b>≡</b>
+<span>Input parameters</span>
+</a><div class='tab-content'>
 <div class='image-border'><img src="http://www.pointzero-trading.com/webroot/model_files/Product/images/1/trend_trading_params.png" alt="Trend trading params" /></div>
 <p>When loading the indicator to any chart, you will be presented with a set of options as input parameters. Don't despair if you think they are too many, because parameters are grouped into self-explanatory blocks.</p>
 <dl>
@@ -216,8 +223,9 @@ To decrease the risk allocation, perform one or more of the following measures.
 </div>
 </li>
 <li class='tab-header-and-content'>
-<a href="#" class="tab-link">Developers</a>
-<div class='tab-content'>
+<a href="#" class="tab-link"><b>&lt;/&gt;</b>
+<span>Developers</span>
+</a><div class='tab-content'>
 <p>
 In order to build your expert advisor, you can read data from the indicator using the iCustom() function as exemplified below.
 <br>
@@ -231,8 +239,9 @@ Read more information about the iCustom() function
 </div>
 </li>
 <li class='tab-header-and-content'>
-<a href="#" class="tab-link">FAQs</a>
-<div class='tab-content'>
+<a href="#" class="tab-link"><b>?</b>
+<span>FAQs</span>
+</a><div class='tab-content'>
 <dl>
 <dt>Does the indicator repaint or backpaint?</dt>
 <dd>No, the indicator is non-repainting and non-backpainting.</dd>
@@ -256,14 +265,15 @@ Read more information about the iCustom() function
 </div>
 </li>
 <li class='tab-header-and-content'>
-<a href="#" class="tab-link">Comments (23)</a>
-<div class='tab-content'>
+<a href="#" class="tab-link"><b>&#128172;</b>
+<span>Comments (23)</span>
+</a><div class='tab-content'>
 <p>Content2</p>
 </div>
 </li>
 </ul>
-<hr>
 <div class='related-products'>
+<hr>
 <div class='view-all'><a href="#">view all ›</a></div>
 <h3>Related Products (84)</h3>
 <div class='cols'>
@@ -369,6 +379,10 @@ Read more information about the iCustom() function
 <div class='logo'>
 <a href="#"><img src="../assets/images/pz-logo.png" alt="PZ Logo" /></a>
 <p>Our mission is to create top-quality and unique trading tools for the Metatrader Platform. If you like our free indicators and EAs, kindly consider buying a product to support our work.</p>
+<div class='social-mini only-mobile'>
+<a href="#"><img src="../assets/images/icons/fb.svg" alt="Fb" /></a>
+<a href="#"><img src="../assets/images/icons/tw.svg" alt="Tw" /></a>
+</div>
 </div>
 </div>
 <div class='col30'>
@@ -421,6 +435,29 @@ Twitter
 </div>
 </div>
 </footer>
+<div class='modal'>
+<input class='modal-state' id='modal-1' type='checkbox'>
+<div class='modal-fade-screen-picture'>
+<div class='modal-inner'>
+<div class='modal-close' for='modal-1'></div>
+<img src="http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg" alt="Main" />
+<p>Image caption</p>
+</div>
+</div>
+</div>
+<div class='modal'>
+<input class='modal-state' id='modal-2' type='checkbox'>
+<div class='modal-fade-screen-picture'>
+<div class='modal-inner'>
+<div class='modal-close' for='modal-2'></div>
+<div class='video'>
+<div class='video-wrapper'>
+<iframe allowfullscreen='' frameborder='0' src='http://www.youtube.com/embed/8ItNE_DX6Cc?showinfo=0&amp;iv_load_policy=3&amp;controls=0'></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="../assets/javascripts/application.js"></script>

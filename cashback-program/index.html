@@ -8,23 +8,24 @@
 <link href="../assets/stylesheets/application.css" rel="stylesheet" />
 </head>
 <body class='cashback-program cashback-program_index'>
-<header>
+<header class='navigation'>
 <div class='container'>
 <div class='logo'>
 <a href="/"><img src="../assets/images/pz-logo.png" alt="PZ Logo" /></a>
 </div>
-<nav>
-<ul>
-<li class='submenu'>
-<a href="../products/">Products</a>
-<ul>
+<div class='navigation-menu-button' id='js-mobile-menu'><a href="javascript:void(0)">&#9776;</a></div>
+<nav role='navigation'>
+<ul class='navigation-menu show' id='js-navigation-menu'>
+<li class='nav-link more' id='js-navigation-more'>
+<a href="javascript:void(0)">Products</a>
+<ul class='submenu'>
 <li><a href="../products/">Indicators</a></li>
 <li><a href="../products/">Expert Advisors</a></li>
 <li><a href="../products/">Free Download</a></li>
 </ul>
 </li>
-<li><a href="./">Cashback Program</a></li>
-<li><a href="../help-page/">Help</a></li>
+<li class='nav-link'><a href="./">Cashback Program</a></li>
+<li class='nav-link'><a href="../help-page/">Help</a></li>
 </ul>
 </nav>
 <div class='social'>
@@ -359,6 +360,10 @@ Yearly Cash Earnings:
 <div class='logo'>
 <a href="#"><img src="../assets/images/pz-logo.png" alt="PZ Logo" /></a>
 <p>Our mission is to create top-quality and unique trading tools for the Metatrader Platform. If you like our free indicators and EAs, kindly consider buying a product to support our work.</p>
+<div class='social-mini only-mobile'>
+<a href="#"><img src="../assets/images/icons/fb.svg" alt="Fb" /></a>
+<a href="#"><img src="../assets/images/icons/tw.svg" alt="Tw" /></a>
+</div>
 </div>
 </div>
 <div class='col30'>
