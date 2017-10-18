@@ -3,179 +3,469 @@ title: PZ - Help Page
 ---
 
 %header.navigation
-	.container
-		.logo
-			=link_to image_tag('pz-logo.png', alt: 'PZ Logo'), '/'
-		#js-mobile-menu.navigation-menu-button=link_to '&#9776;', 'javascript:void(0)'
-		%nav{:role => "navigation"}
-			%ul#js-navigation-menu.navigation-menu.show
-				%li#js-navigation-more.nav-link.more
-					=link_to 'Products', 'javascript:void(0)'
-					%ul.submenu
-						%li=link_to 'Indicators', 'products'
-						%li=link_to 'Expert Advisors', 'products'
-						%li=link_to 'Free Download', 'products'
-				%li.nav-link=link_to 'Cashback Program', 'cashback-program'
-				%li.nav-link=link_to 'Help', 'help-page'
-		.social
-			=link_to image_tag('icons/fb.svg', alt: 'facebook'), 'http://www.facebook.com', target: '_blank'
-			=link_to image_tag('icons/tw.svg', alt: 'twitter'), 'http://www.twitter.com', target: '_blank'
-		.search
-			%form
-				%input{type: 'text', placeholder: 'Search..'}
+  .container
+    .logo
+      =link_to image_tag('pz-logo.png', alt: 'PZ Logo'), '/'
+    #js-mobile-menu.navigation-menu-button=link_to '&#9776;', 'javascript:void(0)'
+    %nav{:role => "navigation"}
+      %ul#js-navigation-menu.navigation-menu.show
+        %li#js-navigation-more.nav-link.more
+          =link_to 'Products', 'javascript:void(0)'
+          %ul.submenu
+            %li=link_to 'Indicators', 'products'
+            %li=link_to 'Expert Advisors', 'products'
+            %li=link_to 'Free Download', 'products'
+        %li.nav-link=link_to 'Cashback Program', 'cashback-program'
+        %li.nav-link=link_to 'Help', 'help-page'
+    .social
+      =link_to image_tag('icons/fb.svg', alt: 'facebook'), 'http://www.facebook.com', target: '_blank'
+      =link_to image_tag('icons/tw.svg', alt: 'twitter'), 'http://www.twitter.com', target: '_blank'
+    .search
+      %form
+        %input{type: 'text', placeholder: 'Search..'}
 %section
-	.breadcrumb
-		.container
-			%ul
-				%li=link_to 'Home', '/'
-				%li Help
+  .breadcrumb
+    .container
+      %ul
+        %li=link_to 'Home', '/'
+        %li Help
 %section.page-help
-	.container
-		%h1 Customer Support
-		%h3 Please find answers to the most common questions below.
-		.cols
-			.col
-				%h4 General Questions
-				%ul
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigger How are products delivered?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigger How long does delivery take?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigger Is the installation difficult?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigger Do I have to pay for future updates?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigger How do I download future updates?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigger What Metatrader version do I need?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigger Can I get the source code of the product?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigger What payment methods do you accept?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigger How do I ask for a refund?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigger Can I refund a mql5.com purchase?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigger Do you offer discounts?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigger Do you offer discounts for mql5.com purchases?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigger Do you offer demos or trials?
-			.col
-				%h4 Indicators Questions
-				%ul
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigge I don't see the indicator listed on MT4
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigge The indicator loads but displays nothing.
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigge The indicator is missing functionality.
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigge The indicator crashes my metatrader platform!
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigge I get a "DLL not allowed" error!
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigge I don't see any backtest results for indicators!
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigge I get a license denied error!
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigge Which are the best parameters?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigge Does it work on renko charts?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigge Does it work on offline mode?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigge Does it implement alerts?
-					%li
-						%label{:for => "modal-1"}
-							.modal-trigge How do I configure mail alerts?
-		.text-center
-			%h3 Can’t find the answer to your question? We are happy to help.
-			%p
-				%strong=link_to 'SUBMIT A TICKET ›', 'ticket'
+  .container
+    %h1 Customer Support
+    %h3 Please find answers to the most common questions below.
+    .cols.css-lightboxes
+      .col
+        %h4 General Questions
+        %ul
+          %li
+            %label{:for => "boxtuie?le"} How are products delivered?
+            %input{:id => "boxtuie?le", :name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans How are products delivered?
+                    %img{:src => "http://www.pointzero-trading.com/webroot/images/tips/download.png", :width => "420"}
+                    %p After the purchase, a permanent download link is sent to your inbox from which you can download your indicator or EA. This link will always be available in the future, should you need to download the product again.
+          %li
+            %label{:for => "boxotlledn"} How long does delivery take?
+            %input#boxotlledn{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans How long does delivery take?
+                    %img{:src => "http://www.pointzero-trading.com/webroot/images/tips/download.png", :width => "420"}
+                    %p The delivery is automatic and should only take a few minutes to arrive, but if the mail delays it can take a few hours. Please check your spam folder as well, as the delivery email might be filtered as spam by your email provider.
+          %li
+            %label{:for => "boxdssltaf"} Is the installation difficult?
+            %input#boxdssltaf{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans Is the installation difficult?
+                    %img{:src => "http://www.pointzero-trading.com/webroot/images/tips/data_folder.png", :width => "420"}
+                    %p Absolutely not. It is just like installing any other indicator or expert advisor in your metatrader data folder. Before purchasing, make sure to download any of our free indicators or EAs to learn how to install them.
+          %li
+            %label{:for => "boxeatDhua"} Do I have to pay for future updates?
+            %input#boxeatDhua{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans Do I have to pay for future updates?
+                    %p Not at all. Updates will always be free for previous customers.
+          %li
+            %label{:for => "boxeadsdou"} How do I download future updates?
+            %input#boxeadsdou{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans How do I download future updates?
+                    %img{:src => "http://www.pointzero-trading.com/webroot/images/tips/download.png", :width => "420"}
+                    %p When an indicator or expert advisor is updated, you will receive a notification email. All you need to do is visiting your private download link again, and downloading the update to your computer.
+          %li
+            %label{:for => "boxee?daWs"} What Metatrader version do I need?
+            %input{:id => "boxee?daWs", :name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans What Metatrader version do I need?
+                    %img{:src => "http://www.pointzero-trading.com/webroot/images/tips/version.png", :width => "420"}
+                    %p At least Metatrader4 b600 is required for all of our products.
+          %li
+            %label{:for => "boxpfsneec"} Can I get the source code of the product?
+            %input#boxpfsneec{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans Can I get the source code of the product?
+                    %p No, you can't. Only .ex4 files are distributed, for obvious reasons.
+          %li
+            %label{:for => "boxcnoeatt"} What payment methods do you accept?
+            %input#boxcnoeatt{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans What payment methods do you accept?
+                    %p We accept credit card, debit card, paypal, neteller, alipai, webmoney, bitcoin and western union. We also accept bank transfer on request for large purchases.
+          %li
+            %label{:for => "boxduoe?af"} How do I ask for a refund?
+            %input{:id => "boxduoe?af", :name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans How do I ask for a refund?
+                    %p To ask for a refund within the 7-day money back period, drop us a line with your order number and the refund will be issued in the next 15 days. Kindly note that purchases made with a discount code are not eligible for a refund, as stated in the terms and conditions and also in the checkout page.
+          %li
+            %label{:for => "boxeamnsre"} Can I refund a mql5.com purchase?
+            %input#boxeamnsre{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans Can I refund a mql5.com purchase?
+                    %img{:src => "http://www.pointzero-trading.com/webroot/images/tips/demo.png", :width => "420"}
+                    %p No, you can't. The refund policy is only applicable to purchases made in pointzero-trading.com. The metatrader market does not give sellers the option to cancel the licenses and refund the order.
+          %li
+            %label{:for => "boxuossrei"} Do you offer discounts?
+            %input#boxuossrei{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans Do you offer discounts?
+                    %p We make special discounts from time to time, stay tuned! We can also make a discount if you buy several items in a single order, drop us a line!
+          %li
+            %label{:for => "boxaomecqo"} Do you offer discounts for mql5.com purchases?
+            %input#boxaomecqo{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans Do you offer discounts for mql5.com purchases?
+                    %p No, we don't. The site mql5.com does not support discount codes.
+          %li
+            %label{:for => "boxoffotyu"} Do you offer demos or trials?
+            %input#boxoffotyu{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans Do you offer demos or trials?
+                    %img{:src => "http://www.pointzero-trading.com/webroot/images/tips/demo.png", :width => "420"}
+                    %p Yes, we do! You can download demos of every product from the Metatrader Market. Kindly note that demos only work in the tester. But we do not offer fully-functional trials because support costs would skyrocket for us.
+      .col
+        %h4 Indicators
+        %ul
+          %li
+            %label{:for => "boxdtie4cI"} I don't see the indicator listed on MT4
+            %input#boxdtie4cI{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans I don't see the indicator listed on MT4
+                    %img{:src => "http://www.pointzero-trading.com/webroot/images/tips/data_folder.png", :width => "420"}
+                    %p
+                      Kindly note that since the Metatrader4 b600 update, indicators are no longer stored in C:/Program_Files/Metatrader/experts/indicators. Instead, indicators must be saved in the data folder of Metatrader4.
+                      %br
+                      %br
+                      Follow these steps.
+                      %br
+                      1) Open Metatrader.
+                      %br
+                      2) Click File - Open Data Folder. A browser will open.
+                      %br
+                      3) Store the .ex4 file in mql4/indicators.
+                      %br
+                      4) Restart MT4.
+          %li
+            %label{:for => "boxldtndsl"} The indicator loads but displays nothing
+            %input#boxldtndsl{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans The indicator loads but displays nothing
+                    %img{:src => "http://www.pointzero-trading.com/webroot/images/tips/dll_perm.png", :width => "420"}
+                    %p
+                      If the indicator displays nothing, make sure of the following.
+                      %br
+                      %br
+                      1) Make sure to enable DLL Calls in your platform
+                      %br
+                      2) Make sure to be connected to your broker account
+                      %br
+                      3) If you have renamed the indicator file, restore the original filename
+          %li
+            %label{:for => "boxsdinnTc"} The indicator is missing functionality
+            %input#boxsdinnTc{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans The indicator is missing functionality
+                    %p Some indicators are recursive and call themselves. Make sure to have saved the indicator in mql4/indicators, and not in a sub-folder. If the indicator is in a sub-folder, the recursive call will fail and some features of the indicator will be missing.
+          %li
+            %label{:for => "boxeaatdey"} The indicator crashes my metatrader platform!
+            %input#boxeaatdey{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans The indicator crashes my metatrader platform!
+                    %p
+                      Some indicators, for example pz-wolfe-waves or pz-harmonic-trading, depend on the zig-zag indicator. Make sure to have the zig-zag indicator installed and compiled in mql4/indicators. You can download the zig-zag indicator
+                      %a{:href => "https://www.mql5.com/en/code/download/7796/ZigZag.mq4"} from here.
+          %li
+            %label{:for => "boxlerLte!"} I get a "DLL not allowed" error!
+            %input{:id => "boxlerLte!", :name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans I get a "DLL not allowed" error!
+                    %img{:src => "http://www.pointzero-trading.com/webroot/images/tips/dll_perm.png", :width => "420"}
+                    %p Make sure to enable DLL calls in your metatrader plaform.
+          %li
+            %label{:for => "boxoIstrnf"} I don't see any backtest results for indicators!
+            %input#boxoIstrnf{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans I don't see any backtest results for indicators!
+                    %p Indicators are software plug-ins which only load on your chart and plot visual information, but indicators can't trade for you and thus cannot be backtested in the strategy tester.
+          %li
+            %label{:for => "boxpthmshr"} Which are the best parameters?
+            %input#boxpthmshr{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans Which are the best parameters?
+                    %p When it comes to indicators, optimization is not really necessary. The best parameters are the default parameters: that is why they were selected as such by the developer.
+          %li
+            %label{:for => "boxlrcenra"} I get a license denied error!
+            %input#boxlrcenra{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans I get a license denied error!
+                    %p The indicator filename has your license number appended to it. If you renamed the indicator file the license check will fail. If so, please restore the original filename of the indicator. If the problem persists, you might be behind a firewall and you should look into that.
+          %li
+            %label{:for => "boxicenton"} Does it work on renko charts?
+            %input#boxicenton{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans Does it work on renko charts?
+                    %p All indicators will load into an offline chart, but there is no point. Renko charts are not price action, but an over-simplification of reality: the market is bidimensional, price and time are just as important. If you use renko charts, our indicators will not be useful to you.
+          %li
+            %label{:for => "boxisemroi"} Does it work on offline mode?
+            %input#boxisemroi{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans Does it work on offline mode?
+                    %p No, it won't. All of our products require you to be connected to your broker account. If you are not connected to your account, the indicator will not load.
+          %li
+            %label{:for => "boxil?psle"} Does it implement alerts?
+            %input{:id => "boxil?psle", :name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans Does it implement alerts?
+                    %p Yes! All indicators implement visual, sound, email and push alerts.
+          %li
+            %label{:for => "boxgsuorlf"} How do I configure mail alerts?
+            %input#boxgsuorlf{:name => "question", :type => "radio"}
+            .overlay
+              %label{:for => "close", :title => "Close futurebox"}
+                .content01
+                  %strong.closebutton{:title => "Close futurebox"} x
+                  .inner_content
+                    %h5.open_sans How do I configure mail alerts?
+                    %img{:src => "http://www.pointzero-trading.com/webroot/images/tips/mail.png", :width => "420"}
+                    %p Metatrader uses your own mail server to send email alerts. You must enter your mail server and credentials into your metatrader settings. Then, enable mail alerts in the indicator inputs.
+    / .cols
+    /   .col
+    /     %h4 General Questions
+    /     %ul
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigger How are products delivered?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigger How long does delivery take?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigger Is the installation difficult?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigger Do I have to pay for future updates?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigger How do I download future updates?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigger What Metatrader version do I need?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigger Can I get the source code of the product?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigger What payment methods do you accept?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigger How do I ask for a refund?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigger Can I refund a mql5.com purchase?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigger Do you offer discounts?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigger Do you offer discounts for mql5.com purchases?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigger Do you offer demos or trials?
+    /   .col
+    /     %h4 Indicators Questions
+    /     %ul
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigge I don't see the indicator listed on MT4
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigge The indicator loads but displays nothing.
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigge The indicator is missing functionality.
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigge The indicator crashes my metatrader platform!
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigge I get a "DLL not allowed" error!
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigge I don't see any backtest results for indicators!
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigge I get a license denied error!
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigge Which are the best parameters?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigge Does it work on renko charts?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigge Does it work on offline mode?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigge Does it implement alerts?
+    /       %li
+    /         %label{:for => "modal-1"}
+    /           .modal-trigge How do I configure mail alerts?
+    .text-center
+      %h3 Can’t find the answer to your question? We are happy to help.
+      %p
+        %strong=link_to 'SUBMIT A TICKET ›', 'ticket'
 
 %footer
-	.container
-		.cols
-			.col30
-				.logo
-					=link_to image_tag('pz-logo.png', alt: 'PZ Logo')
-					%p Our mission is to create top-quality and unique trading tools for the Metatrader Platform. If you like our free indicators and EAs, kindly consider buying a product to support our work.
-					.social-mini.only-mobile
-						=link_to image_tag('icons/fb.svg'), '#'
-						=link_to image_tag('icons/tw.svg'), '#'
-			.col30
-				%h4 JOIN OUR MAILING LIST
-				%p Receive free indicators and expert advisors directly to your inbox as soon as they are released.
-				%form.newsletter
-					%input{type: 'text', placeholder: 'Enter your Email...'}
-					%input{type: 'submit', value: '›'}
-			.col30
-				%nav
-					%h4 PRODUCTS
-					%ul
-						%li=link_to 'Metatrader Indicators', '#'
-						%li=link_to 'Metatrader Expert Advisors', '#'
-						%li=link_to 'Free Metatrader Indicators', '#'
-						%li=link_to 'Free Metatrader EAs', '#'
-						%li=link_to 'Free MT4 Indicators and EAs', '#'
-						%li=link_to 'Forex Rebates', '#'
-				.social
-					%h4 SOCIAL
-					%ul
-						%li
-							=link_to '#' do
-								%span.icon=image_tag('icons/fb.svg')
-								Facebook
-						%li
-							=link_to '#' do
-								%span.icon=image_tag('icons/tw.svg')
-								Twitter
-		%nav.legals
-			%ul
-				%li © 2017 This site is owned and operated by PZ Trading Ltd. Registration Number 2531079 (Hong Kong)
-				%li=link_to 'Privacy Policy', '#'
-				%li=link_to 'Terms & Conditions', '#'
-	.dmca
-		.container
-			=image_tag('icons/dmca.png')
-			%p Protection: All original content on Pointzero-trading.com is created by the website owner, including but not limited to text, design, code, images, photographs and videos are considered to be the Intellectual Property of the website owner, whether copyrighted or not, and are protected by DMCA Protection Services using the Digital Millennium Copyright Act Title 17 Chapter 512 (c)(3). Reproduction or re-publication of this content is prohibited without permission.
+  .container
+    .cols
+      .col30
+        .logo
+          =link_to image_tag('pz-logo.png', alt: 'PZ Logo')
+          %p Our mission is to create top-quality and unique trading tools for the Metatrader Platform. If you like our free indicators and EAs, kindly consider buying a product to support our work.
+          .social-mini.only-mobile
+            =link_to image_tag('icons/fb.svg'), '#'
+            =link_to image_tag('icons/tw.svg'), '#'
+      .col30
+        %h4 JOIN OUR MAILING LIST
+        %p Receive free indicators and expert advisors directly to your inbox as soon as they are released.
+        %form.newsletter
+          %input{type: 'text', placeholder: 'Enter your Email...'}
+          %input{type: 'submit', value: '›'}
+      .col30
+        %nav
+          %h4 PRODUCTS
+          %ul
+            %li=link_to 'Metatrader Indicators', '#'
+            %li=link_to 'Metatrader Expert Advisors', '#'
+            %li=link_to 'Free Metatrader Indicators', '#'
+            %li=link_to 'Free Metatrader EAs', '#'
+            %li=link_to 'Free MT4 Indicators and EAs', '#'
+            %li=link_to 'Forex Rebates', '#'
+        .social
+          %h4 SOCIAL
+          %ul
+            %li
+              =link_to '#' do
+                %span.icon=image_tag('icons/fb.svg')
+                Facebook
+            %li
+              =link_to '#' do
+                %span.icon=image_tag('icons/tw.svg')
+                Twitter
+    %nav.legals
+      %ul
+        %li © 2017 This site is owned and operated by PZ Trading Ltd. Registration Number 2531079 (Hong Kong)
+        %li=link_to 'Privacy Policy', '#'
+        %li=link_to 'Terms & Conditions', '#'
+  .dmca
+    .container
+      =image_tag('icons/dmca.png')
+      %p Protection: All original content on Pointzero-trading.com is created by the website owner, including but not limited to text, design, code, images, photographs and videos are considered to be the Intellectual Property of the website owner, whether copyrighted or not, and are protected by DMCA Protection Services using the Digital Millennium Copyright Act Title 17 Chapter 512 (c)(3). Reproduction or re-publication of this content is prohibited without permission.
 
 
 
 .modal
-	%input#modal-1.modal-state{:type => "checkbox"}
-	.modal-fade-screen
-		.modal-inner
-			.modal-close{:for => "modal-1"}
-			%h1 Modal Title
-			%p Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.
-			=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/trend_trading_params.png')
-			%p Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.
+  %input#modal-1.modal-state{:type => "checkbox"}
+  .modal-fade-screen
+    .modal-inner
+      .modal-close{:for => "modal-1"}
+      %h1 Modal Title
+      %p Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.
+      =image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/trend_trading_params.png')
+      %p Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.
 

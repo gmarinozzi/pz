@@ -7,7 +7,12 @@
     width: 100px;
     display: inline-block;
     position: absolute;
-
+    &:before{
+      content: url('../images/icons/filter.png');
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+    }
   }
   ul{
     display: inline-block;

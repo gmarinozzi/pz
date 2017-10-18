@@ -7,6 +7,11 @@
     width: 100px;
     display: inline-block;
     position: absolute; }
+    .product-filters h4:before {
+      content: url("../images/icons/filter.png");
+      width: 30px;
+      height: 30px;
+      display: inline-block; }
   .product-filters ul {
     display: inline-block;
     float: left;
