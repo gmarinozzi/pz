@@ -1483,6 +1483,15 @@ article {
   .products-page .product-block {
     width: 100%; } }
 
+.page-text {
+  padding: 40px 0; }
+  .page-text h1 + p {
+    padding-top: 20px; }
+  .page-text h3 {
+    padding-top: 20px; }
+  .page-text h3 + p {
+    padding-top: 20px; }
+
 aside {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
@@ -1866,11 +1875,13 @@ nav.checkout-nav {
         .page-help .cols .col ul li {
           list-style: none;
           font-size: 16px;
-          font-weight: bold;
           color: #4791ff;
           padding-bottom: 15px; }
           .page-help .cols .col ul li:hover {
             cursor: pointer; }
+          .page-help .cols .col ul li .hidden {
+            display: none;
+            max-width: 600px; }
   .page-help .text-center {
     text-align: center;
     margin: 60px 0; }
@@ -1882,87 +1893,14 @@ nav.checkout-nav {
       width: 100%;
       margin: 20px 0; } }
 
-.css-lightboxes ul li img, ul li label {
-  display: block;
-  cursor: pointer; }
-
-.css-lightboxes ul li input {
-  display: none; }
-
-.css-lightboxes ul li input:checked + .overlay {
-  display: table; }
-
-.css-lightboxes ul li h5 {
-  font-size: 20px;
-  color: #D1472C;
-  padding-bottom: 20px;
-  padding-top: 5px; }
-
-.css-lightboxes ul li p {
-  font-size: 15px;
-  line-height: 22px;
-  color: #555; }
-
-.css-lightboxes ul li .inner_content img {
-  margin: 0 auto;
-  margin-bottom: 15px;
-  border: 2px solid #ededed;
-  border-radius: 3px;
-  display: inline-block; }
-
-.css-lightboxes .overlay {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  z-index: 999;
-  background: black;
-  background: rgba(0, 0, 0, 0.7); }
-
-.css-lightboxes .overlay label {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center; }
-
-.css-lightboxes .overlay img, .overlay iframe {
-  display: inline;
-  border: none;
-  padding: 10px;
-  border-radius: 3px;
-  background: #ffffff; }
-
-.css-lightboxes .content01 {
-  display: block;
-  width: 460px;
-  padding: 20px;
-  background: #fff;
-  color: #000;
-  margin: 0 auto;
-  text-align: left;
-  cursor: auto;
-  position: relative;
-  border-radius: 3px; }
-
-.css-lightboxes #close {
-  display: none; }
-
-.css-lightboxes .closebutton {
-  color: #999;
-  font-size: 20px;
-  cursor: pointer;
-  height: 30px;
-  line-height: 30px;
-  overflow: hidden;
-  position: absolute;
-  right: 7px;
-  text-align: center;
-  top: 7px;
-  width: 30px; }
-
-.css-lightboxes .closebutton:hover {
-  color: #666; }
+.inner {
+  max-width: 420px; }
+  .inner img {
+    padding-bottom: 20px; }
+  .inner h5 {
+    font-size: 16px; }
+  .inner p {
+    font-size: 14px; }
 
 .modal label {
   cursor: pointer;
@@ -2319,7 +2257,7 @@ footer {
       opacity: .5; }
   footer .legals {
     border-top: 1px solid #ededed;
-    padding: 30px 0;
+    padding: 20px 0 30px 0;
     margin-top: 30px;
     color: #999;
     width: 100%; }
@@ -2328,7 +2266,8 @@ footer {
       padding-right: 20px;
       border-left: 1px solid #999;
       padding-left: 20px;
-      line-height: 14px; }
+      line-height: 14px;
+      margin-top: 10px; }
       footer .legals ul li:first-child {
         border-left: none;
         padding-left: 0; }
