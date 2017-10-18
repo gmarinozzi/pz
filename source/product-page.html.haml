@@ -136,28 +136,30 @@ title: PZ - Product Page
 						%label.read-more-trigger{:for => "post-1"}
 						.screenshots
 							%h3 Screenshots
-							%label{:for => "modal-1"}
-								.modal-trigger=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+							%a{"data-caption" => "My caption", "data-fancybox" => "screenshots", :href => "http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg"}
+								%img{:alt => "", :src => "http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg"}
 							.cols
 								.col
-									%label{:for => "modal-1"}
-										.modal-trigger=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+									%a{"data-caption" => "My caption", "data-fancybox" => "screenshots", :href => "http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg"}
+										%img{:alt => "", :src => "http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg"}
 								.col
-									%label{:for => "modal-1"}
-										.modal-trigger=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+									%a{"data-caption" => "My caption", "data-fancybox" => "screenshots", :href => "http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg"}
+										%img{:alt => "", :src => "http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg"}
 								.col
-									%label{:for => "modal-1"}
-										.modal-trigger=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
+									%a{"data-caption" => "My caption", "data-fancybox" => "screenshots", :href => "http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg"}
+										%img{:alt => "", :src => "http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg"}
 							%h3 Videos
 							.cols
 								.col
-									%label{:for => "modal-2"}
-										.modal-trigger=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
-										.caption Safety Net EA 20.2
+									.video
+										.video-wrapper
+											%iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://www.youtube.com/embed/3w9MLsMuaeo?showinfo=0&iv_load_policy=3&controls=0"}
+									.caption Safety Net EA 20.2
 								.col
-									%label{:for => "modal-2"}
-										.modal-trigger=image_tag('http://www.pointzero-trading.com/webroot/model_files/Product/images/1/main.jpg')
-										.caption Safety Net EA 20.2
+									.video
+										.video-wrapper
+											%iframe{:allowfullscreen => "", :frameborder => "0", :src => "http://www.youtube.com/embed/QbHZvMFyUk4?showinfo=0&iv_load_policy=3&controls=0"}
+									.caption Safety Net EA 20.2
 
 
 				%li.tab-header-and-content

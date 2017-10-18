@@ -1,0 +1,10 @@
+.page-text {
+  padding: 40px 0; }
+  .page-text h1 + p {
+    padding-top: 20px; }
+  .page-text h3 {
+    padding-top: 20px; }
+  .page-text h3 + p {
+    padding-top: 20px; }
+
+/*# sourceMappingURL=_page-text.css.map */

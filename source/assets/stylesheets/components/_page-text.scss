@@ -1,0 +1,12 @@
+.page-text{
+  padding: 40px 0;
+  h1 + p{
+    padding-top: 20px;
+  }
+  h3{
+    padding-top: 20px;
+  }
+  h3 + p{
+    padding-top: 20px;
+  }
+}

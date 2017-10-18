@@ -1,0 +1,122 @@
+---
+title: PZ - text Page
+---
+
+%header.navigation
+  .container
+    .logo
+      =link_to image_tag('pz-logo.png', alt: 'PZ Logo'), '/'
+    #js-mobile-menu.navigation-menu-button=link_to '&#9776;', 'javascript:void(0)'
+    %nav{:role => "navigation"}
+      %ul#js-navigation-menu.navigation-menu.show
+        %li#js-navigation-more.nav-link.more
+          =link_to 'Products', 'javascript:void(0)'
+          %ul.submenu
+            %li=link_to 'Indicators', 'products'
+            %li=link_to 'Expert Advisors', 'products'
+            %li=link_to 'Free Download', 'products'
+        %li.nav-link=link_to 'Cashback Program', 'cashback-program'
+        %li.nav-link=link_to 'Help', 'help-page'
+    .social
+      =link_to image_tag('icons/fb.svg', alt: 'facebook'), 'http://www.facebook.com', target: '_blank'
+      =link_to image_tag('icons/tw.svg', alt: 'twitter'), 'http://www.twitter.com', target: '_blank'
+    .search
+      %form
+        %input{type: 'text', placeholder: 'Search..'}
+%section
+  .breadcrumb
+    .container
+      %ul
+        %li=link_to 'Home', '/'
+        %li Help
+%section.page-text
+  .container
+    %h1 Privacy Policy
+    %p In compliance with applicable law regarding protection of personal data, property of PZ Trading Ltd., hereinafter referred to as the COMPANY, advises that any information of this type, provided by customers or users of the website http://www.pointzero-trading.com/, hereinafter referred to as the WEBSITE, through software license acquisition request forms or e-mails sent to the different mailboxes that the COMPANY has available in its website, implies that they accept and expressly authorize THE COMPANY, the database owner, to transfer and communicate these personal data to other services in charge of their processing and/or third service providers with the following purposes and objectives: (i) for the proper management of purchases made via the website, (ii) to send e-mails or regular mail with information about the products marketed on the website, (iii) to request information regarding the operation of the website and the products marketed on it, in order to improve the services and customize the experience of customers and/or users and (iiii) to offer financial or brokerage services.
+
+    %p Also the user or customer, by accepting the Privacy Policy, expressly consents for THE COMPANY to communicate to third parties personal data, for the sole purpose of offering, by telephone or telematic means, financial, securities, stock-market and forex market products and services. The user and/or customer can exercise their rights of access, rectification, cancellation and opposition -regarding the communication referred to in this paragraph- through any of the channels provided below.
+
+    %p The COMPANY advises that such data will be included in its base, which is the COMPANY's property. Customers and users also agree to the use, by the data manager and service providers, of personal data, always under the direction and supervision of the database COMPANY, and with the only purpose for which they have been given. Contact details, for information purposes, of the data manager and service are given below:
+
+    %p
+      PZ Trading Ltd <br>
+      help [at] pointzero-trading.com<br>
+      skype: pztrading
+
+    %p
+      Linode LLC<br>
+      privacy [at] linode.com<br>
+      329 E. Jimmie Leeds Road, Suite A<br>
+      Galloway, NJ 08205 <br>
+      United States
+
+    %p The COMPANY assumes that the data provided have been entered by its owner or a person authorized by him, as well as their veracity and accuracy. Therefore, the COMPANY disclaims any possible inaccuracy in these data. In any case, both customers and users have the right to access, cancel, correct and disagree to the use of his data by informing the COMPANY, data manager or service providers through the following channels:
+
+    %p
+      PZ Trading Ltd <br>
+      help [at] pointzero-trading.com<br>
+      skype: pztrading
+
+    %p
+      Linode LLC<br>
+      privacy [at] linode.com<br>
+      329 E. Jimmie Leeds Road, Suite A<br>
+      Galloway, NJ 08205 <br>
+      United States
+
+    %p Also, the COMPANY wants to make it clear that its website does not use cookies and that its database does not include information related to the form of payment. Furthermore, the COMPANY does not have access to such an information. The COMPANY, for his part, undertakes to maintain the secrecy and security of the personal data transferred, according to the applicable law in this matter.
+
+    %p Amendments to this privacy policy may be made at any time and you should check back frequently for any changes. The COMPANY will never make changes to this policy that result in less protection of your personal information without sending notice. This policy was last updated on March 8th, 2015.
+
+    %h3 Risk Disclaimer
+
+    %p Trading foreign exchange on margin carries a high level of risk, and may not be suitable for all investors. The high degree of leverage can work against you as well as for you. Before deciding to invest in foreign exchange you should carefully consider your investment objectives, level of experience, and risk appetite. The possibility exists that you could sustain a loss of some or all of your initial investment and therefore you should not invest money that you cannot afford to lose. You should be aware of all the risks associated with foreign exchange trading, and seek advice from an independent financial advisor if you have any doubts. Clearly understand this: Information contained within this course is not an invitation to trade any specific investments.
+    %p Trading requires risking money in pursuit of future gain. That is your decision. Do not risk any money you cannot afford to lose. This document does not take into account your own individual financial and personal circumstances. It is intended for educational purposes only and not as individual investment advice. Do not act on this without advice from your investment professional, who will verify what is suitable for your particular needs and circumstances. Failure to seek detailed professional personally tailored advice prior to acting could lead to you acting contrary to your own best interests and could lead to losses of capital.
+    %p CFTC RULE 4.41   -   HYPOTHETICAL OR SIMULATED PERFORMANCE RESULTS HAVE CERTAIN LIMITATIONS. UNLIKE AN ACTUAL PERFORMANCE RECORD, SIMULATED RESULTS DO NOT REPRESENT ACTUAL TRADING. ALSO, SINCE THE TRADES HAVE NOT BEEN EXECUTED, THE RESULTS MAY HAVE UNDER-OR-OVER COMPENSATED FOR THE IMPACT, IF ANY, OF CERTAIN MARKET FACTORS, SUCH AS LACK OF LIQUIDITY. SIMULATED TRADING PROGRAMS IN GENERAL ARE ALSO SUBJECT TO THE FACT THAT THEY ARE DESIGNED WITH THE BENEFIT OF HINDSIGHT. NO REPRESENTATION IS BEING MADE THAT ANY ACCOUNT WILL OR IS LIKELY TO ACHIEVE PROFIT OR LOSSES SIMILAR TO THOSE SHOWN.
+    %p By using any free or paid product developed by the COMPANY, you acknowledge that you are familiar with these risks and that you are solely responsible for the outcomes of your decisions. We accept no liability whatsoever for any direct or consequential loss arising from the use of this product. It's to be noted carefully in this respect, that past results are not necessarily indicative of future performance.
+%footer
+  .container
+    .cols
+      .col30
+        .logo
+          =link_to image_tag('pz-logo.png', alt: 'PZ Logo')
+          %p Our mission is to create top-quality and unique trading tools for the Metatrader Platform. If you like our free indicators and EAs, kindly consider buying a product to support our work.
+          .social-mini.only-mobile
+            =link_to image_tag('icons/fb.svg'), '#'
+            =link_to image_tag('icons/tw.svg'), '#'
+      .col30
+        %h4 JOIN OUR MAILING LIST
+        %p Receive free indicators and expert advisors directly to your inbox as soon as they are released.
+        %form.newsletter
+          %input{type: 'text', placeholder: 'Enter your Email...'}
+          %input{type: 'submit', value: '›'}
+      .col30
+        %nav
+          %h4 PRODUCTS
+          %ul
+            %li=link_to 'Metatrader Indicators', '#'
+            %li=link_to 'Metatrader Expert Advisors', '#'
+            %li=link_to 'Free Metatrader Indicators', '#'
+            %li=link_to 'Free Metatrader EAs', '#'
+            %li=link_to 'Free MT4 Indicators and EAs', '#'
+            %li=link_to 'Forex Rebates', '#'
+        .social
+          %h4 SOCIAL
+          %ul
+            %li
+              =link_to '#' do
+                %span.icon=image_tag('icons/fb.svg')
+                Facebook
+            %li
+              =link_to '#' do
+                %span.icon=image_tag('icons/tw.svg')
+                Twitter
+    %nav.legals
+      %ul
+        %li © 2017 This site is owned and operated by PZ Trading Ltd. Registration Number 2531079 (Hong Kong)
+        %li=link_to 'Privacy Policy', '#'
+        %li=link_to 'Terms & Conditions', '#'
+  .dmca
+    .container
+      =image_tag('icons/dmca.png')
+      %p Protection: All original content on Pointzero-trading.com is created by the website owner, including but not limited to text, design, code, images, photographs and videos are considered to be the Intellectual Property of the website owner, whether copyrighted or not, and are protected by DMCA Protection Services using the Digital Millennium Copyright Act Title 17 Chapter 512 (c)(3). Reproduction or re-publication of this content is prohibited without permission.
