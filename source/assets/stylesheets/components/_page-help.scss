@@ -25,7 +25,6 @@
         li{
           list-style: none;
           font-size: 16px;
-          font-weight: bold;
           color: $blue;
           padding-bottom: 15px;
           &:hover{
@@ -52,8 +51,8 @@
     }
   }
 }
-
-.css-lightboxes ul li img, ul li label { display: block; cursor: pointer; }
+.css-lightboxes h5{ margin: 0;}
+.css-lightboxes ul li img, .css-lightboxes ul li label { display: block; cursor: pointer; }
 .css-lightboxes ul li input { display: none; }
 .css-lightboxes ul li input:checked + .overlay { display: table; }
 .css-lightboxes ul li h5{font-size:20px; color: #D1472C; padding-bottom:20px; padding-top:5px;}
