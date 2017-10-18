@@ -1639,7 +1639,8 @@ aside {
     font-size: 14px;
     width: 100px;
     display: inline-block;
-    position: absolute; }
+    position: absolute;
+    left: 0; }
     .product-filters h4:before {
       content: url("../images/icons/filter.png");
       width: 30px;
