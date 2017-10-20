@@ -1,0 +1,372 @@
+---
+title: PZ - Cashback private page
+---
+
+%header.navigation
+	.container
+		.logo
+			=link_to image_tag('pz-logo.png', alt: 'PZ Logo'), '/'
+		#js-mobile-menu.navigation-menu-button=link_to '&#9776;', 'javascript:void(0)'
+		%nav{:role => "navigation"}
+			%ul#js-navigation-menu.navigation-menu.show
+				%li#js-navigation-more.nav-link.more
+					=link_to 'Products', 'javascript:void(0)'
+					%ul.submenu
+						%li=link_to 'Indicators', 'products'
+						%li=link_to 'Expert Advisors', 'products'
+						%li=link_to 'Free Download', 'products'
+				%li.nav-link=link_to 'Cashback Program', 'cashback-program'
+				%li.nav-link=link_to 'Help', 'help-page'
+		.social
+			=link_to image_tag('icons/fb.svg', alt: 'facebook'), 'http://www.facebook.com', target: '_blank'
+			=link_to image_tag('icons/tw.svg', alt: 'twitter'), 'http://www.twitter.com', target: '_blank'
+		.search
+			%form
+				%input{type: 'text', placeholder: 'Search..'}
+%section
+	.breadcrumb
+		.container
+			%ul
+				%li=link_to 'Home', '/'
+				%li=link_to 'Products', 'products'
+				%li=link_to 'Metatrader Expert Advisor', 'products'
+				%li Safety Net EA
+%section.product.cashback-private
+	.container
+		%aside.no-border
+			%h4 Your trading accounts
+			%p No accounts yet.
+			%p This information is not updated in real time. All information will be updated on or around the 15th day after month-end.
+
+			%h4 Total Rebates Paid
+			%p 0$
+			%p Your 500$ bonus will be paid when your total rebates reaches 2,500$. Rebates will be paid normally every month.
+
+			%h4 Last Payment
+			%p 0$
+
+			%h4 Bonus
+			%p 500$ rebate bonus
+			%p Payable after 2,500$ in rebates
+
+			%h4 Skrill Account
+			%p Your payment account email is g.imratanak12@gmail.com
+
+			%h4 Questions?
+			%p If you have any questions about the rebate program, kindly open a support ticket.
+		%article
+			%h1 Hello Arthur!
+			%p
+				Thanks for joining our cashback program! This is your permanent and private cashback link, which has been sent to your inbox. 
+				%br
+				Please, don't share this page with strangers. Here you will find information about your accounts, total rebates paid and the list of brokers we work with.
+
+			%h4 Select a broker below and open an account!
+			%p Our goal is helping you go green every month. One way we do that is by offering you trading rebates with the world's leading Forex brokers. When you open a trading account with one of these brokers through us, you will receive the same spreads, same executions and same trading environment, with the added benefit of reducing your trading costs with the industry's highest trading rebates!
+
+			.select-broker
+				.cols
+					.col1
+						.icon=image_tag('icons/brokers/icmarkets.png')
+					.col2
+						%h5 IC MARKETS
+						%p The best scalping and high frequency trading conditions you can possibly find are available at IC Markets (ECN account). More often than not, you will find a spread of 0.0 pips, plus 7USD commission per round lot. Execution is fast and customer service is friendly and responsive.
+					.col3
+						%h5 REGULATIONS
+						%p Australia (ASIC)
+						%h5 DETAILS
+						%p
+							Min. Account Size: 1000$
+							Min. Trade Size: 0.01 lots
+							Execution: STP
+						%h5 U.S CUSTOMERS
+						%p No
+					.col4
+						%h5 REBATE FOR YOU
+						%p
+							2$ per round lot (std account)
+							%br
+							1$ per per round lot (ECN account)
+						.button.bg-blue.btn-sm
+							=link_to '#' do
+								Open <strong>Live</strong> Account
+				.cols
+					.col1
+						.icon=image_tag('icons/brokers/fxdd.png')
+					.col2
+						%h5 FXDD
+						%p One of the larger dealers in the forex industry. It has both an international and US division. The dealer has been around for several years, and is well known by people all over the globe because of their various sponsorships of motorsports teams. The dealer is considered to be one of the more popular ones on earth. The company offers plenty trading tools, services, and learning modules. It offers multilingual support.
+
+					.col3
+						%h5 REGULATIONS
+						%p Australia (ASIC)
+						%h5 DETAILS
+						%p
+							Min. Account Size: none
+							Min. Trade Size: 0.01 lots
+							Execution: Dealing Desk
+						%h5 U.S CUSTOMERS
+						%p No
+					.col4
+						%h5 REBATE FOR YOU
+						%p
+							7$ per round lot (std account)
+							%br
+							1$ per per round lot (ECN account)
+						.button.bg-blue.btn-sm
+							=link_to '#' do
+								Open <strong>Live</strong> Account
+				.cols
+					.col1
+						.icon=image_tag('icons/brokers/fxpro.png')
+					.col2
+						%h5 FX PRO
+						%p Over the last 10 years, FX Pro has become renowned for its professionalism and fair trading practices. They provide clients with all the instruments, tools and services they need to trade the world's markets. Execution is fast, cost-effective and support is friendly and fast.
+					.col3
+						%h5 REGULATIONS
+						%p United Kingdom (FCA) and CySec(Cyprus)
+						%h5 DETAILS
+						%p
+							Min. Account Size: 100$
+							%br
+							Min. Trade Size: 0.01 lots
+							%br
+							Execution: No dealing desk
+						%h5 U.S CUSTOMERS
+						%p No
+					.col4
+						%h5 REBATE FOR YOU
+						%p
+							3$ per round lot
+						.button.bg-blue.btn-sm
+							=link_to '#' do
+								Open <strong>Live</strong> Account
+				.cols
+					.col1
+						.icon=image_tag('icons/brokers/fxcm.png')
+					.col2
+						%h5 FXCM
+						%p One of the largest forex dealers available to retail traders. The company is listed on the NYSE, assuring that it is going to be around for many years to come. It has many sources of multilingual customer service available to traders. There are toll-free and international numbers available to traders around the globe.
+					.col3
+						%h5 REGULATIONS
+						%p United States (NFA)
+						%h5 DETAILS
+						%p
+							Min. Account Size: 2,500$
+							%br
+							Min. Trade Size: 0.01 lots
+							%br
+							Execution: NDD and DD
+						%h5 U.S CUSTOMERS
+						%p No
+					.col4
+						%h5 REBATE FOR YOU
+						%p
+							12.5% of commisions
+						.button.bg-blue.btn-sm
+							=link_to '#' do
+								Open <strong>Live</strong> Account
+				.cols
+					.col1
+						.icon=image_tag('icons/brokers/forex.png')
+					.col2
+						%h5 FOREX COM
+						%p This broker is one of the largest in the United States. The dealer is known for its integrity, regulatory compliance, and ease of use for the novice trader. The site is packed full of useful information for traders. Support is fast, friendly and multilingual.
+					.col3
+						%h5 REGULATIONS
+						%p United States (NFA)
+						%h5 DETAILS
+						%p
+							Min. Account Size: 250$
+							%br
+							Min. Trade Size: 0.01 lots
+							%br
+							Execution: Dealing Desk
+						%h5 U.S CUSTOMERS
+						%p Yes
+					.col4
+						%h5 REBATE FOR YOU
+						%p
+							0.30 pips per round turn
+						.button.bg-blue.btn-sm
+							=link_to '#' do
+								Open <strong>Live</strong> Account
+				.cols
+					.col1
+						.icon=image_tag('icons/brokers/friedberg.png')
+					.col2
+						%h5 FRIEDBERG DIRECT
+						%p TCanadian broker founded in 1971, which provides direct admittance to spot foreign currency, options and commodity futures trading through dynamic, on-line trading platforms. It offers fixed spreads, educational resources and multilingual support. New customers can open accounts with as little as 600$.
+					.col3
+						%h5 REGULATIONS
+						%p Canada (IIROC)
+						%h5 DETAILS
+						%p
+							Min. Account Size: 600$
+							%br
+							Min. Trade Size: 0.01 lots
+							%br
+							Execution: NDD
+						%h5 U.S CUSTOMERS
+						%p No
+					.col4
+						%h5 REBATE FOR YOU
+						%p
+							12.5% of commisions
+						.button.bg-blue.btn-sm
+							=link_to '#' do
+								Open <strong>Live</strong> Account
+				.cols
+					.col1
+						.icon=image_tag('icons/brokers/alpha.png')
+					.col2
+						%h5 ALPHA CAPITAL MARKETS
+						%p One of the most instrument-diversified metatrader broker there is. You can trade forex, stock indices, commodities, energy, shares and even bonds directly from your metatrader platform. Unsurpassed reputation, created through decades of doing business the right way. Dedicated 24hr trading desk and customer support.
+					.col3
+						%h5 REGULATIONS
+						%p United Kingdom (FCA)
+						%h5 DETAILS
+						%p
+							Min. Account Size: 200$
+							%br
+							Min. Trade Size: 0.01 lots
+							%br
+							Execution: STP/ECN
+						%h5 U.S CUSTOMERS
+						%p No
+					.col4
+						%h5 REBATE FOR YOU
+						%p
+							0.3 pips per round turn
+						.button.bg-blue.btn-sm
+							=link_to '#' do
+								Open <strong>Individual</strong> Account
+						.button.bg-blue.btn-sm
+							=link_to '#' do
+								Open <strong>Corporate</strong> Account
+				.cols
+					.col1
+						.icon=image_tag('icons/brokers/oanda.png')
+					.col2
+						%h5 OANDA
+						%p Oanda is one of the original online forex dealers of all times. It is one of the largest as well, as the firm has a long running base of clients from around the world. The broker has many pairs that you will not find at other shops, including the Chinese Yuan and Indian Rupee. Because of this, you will find that the broker offers a little bit for everyone.
+					.col3
+						%h5 REGULATIONS
+						%p United States (NFA)
+						%h5 DETAILS
+						%p
+							Min. Account Size: None
+							%br
+							Min. Trade Size: 0.01 lots
+							%br
+							Execution: Market Maker
+						%h5 U.S CUSTOMERS
+						%p Yes
+					.col4
+						%h5 REBATE FOR YOU
+						%p
+							0.20 pips per round turn
+						.button.bg-blue.btn-sm
+							=link_to '#' do
+								Open <strong>Live</strong> Account
+				.cols
+					.col1
+						.icon=image_tag('icons/brokers/pepperstone.png')
+					.col2
+						%h5 PEPPERSTONE
+						%p High quality no desk broker that accommodates all trading styles which offers a wide variety of instruments. The company is based in Melbourne, Australia and has offices in Dallas, USA and Shanghai, China. It offers educational content for novice traders and fast and friendly multilingual support.
+					.col3
+						%h5 REGULATIONS
+						%p Australia (ASIC)
+						%h5 DETAILS
+						%p
+							Min. Account Size: 200$
+							%br
+							Min. Trade Size: 0.01 lots
+							%br
+							Execution: ECN/STP
+						%h5 U.S CUSTOMERS
+						%p Yes
+					.col4
+						%h5 REBATE FOR YOU
+						%p
+							2$ per round lot (std account)
+							%br
+							1$ per round lot (Razor account)
+						.button.bg-blue.btn-sm
+							=link_to '#' do
+								Open <strong>Live</strong> Account
+				.cols
+					.col1
+						.icon=image_tag('icons/brokers/thinkforex.png')
+					.col2
+						%h5 THINK FOREX
+						%p This company belongs to one of the rare breed of forex brokers, which allow their traders to scalp, hedge and high speed trade on their platform. They boast of having one of the best trading environments around for the small time retail trader. With a technologically advanced infrastructure, quality customer service and tight spreads, traders will have no reason to look elsewhere for a reliable broker.
+					.col3
+						%h5 REGULATIONS
+						%p United Kindom (FCA)
+						%h5 DETAILS
+						%p
+							Min. Account Size: 250$
+							%br
+							Min. Trade Size: 0.01 lots
+							%br
+							Execution: ECN/STP
+						%h5 U.S CUSTOMERS
+						%p Yes
+					.col4
+						%h5 REBATE FOR YOU
+						%p
+							2$ per round lot (std account)
+							%br
+							1$ per round lot (pro account)
+						.button.bg-blue.btn-sm
+							=link_to '#' do
+								Open <strong>Live</strong> Account
+
+%footer
+	.container
+		.cols
+			.col30
+				.logo
+					=link_to image_tag('pz-logo.png', alt: 'PZ Logo')
+					%p Our mission is to create top-quality and unique trading tools for the Metatrader Platform. If you like our free indicators and EAs, kindly consider buying a product to support our work.
+					.social-mini.only-mobile
+						=link_to image_tag('icons/fb.svg'), '#'
+						=link_to image_tag('icons/tw.svg'), '#'
+			.col30
+				%h4 JOIN OUR MAILING LIST
+				%p Receive free indicators and expert advisors directly to your inbox as soon as they are released.
+				%form.newsletter
+					%input{type: 'text', placeholder: 'Enter your Email...'}
+					%input{type: 'submit', value: '›'}
+			.col30
+				%nav
+					%h4 PRODUCTS
+					%ul
+						%li=link_to 'Metatrader Indicators', '#'
+						%li=link_to 'Metatrader Expert Advisors', '#'
+						%li=link_to 'Free Metatrader Indicators', '#'
+						%li=link_to 'Free Metatrader EAs', '#'
+						%li=link_to 'Free MT4 Indicators and EAs', '#'
+						%li=link_to 'Forex Rebates', '#'
+				.social
+					%h4 SOCIAL
+					%ul
+						%li
+							=link_to '#' do
+								%span.icon=image_tag('icons/fb.svg')
+								Facebook
+						%li
+							=link_to '#' do
+								%span.icon=image_tag('icons/tw.svg')
+								Twitter
+		%nav.legals
+			%ul
+				%li © 2017 This site is owned and operated by PZ Trading Ltd. Registration Number 2531079 (Hong Kong)
+				%li=link_to 'Privacy Policy', '#'
+				%li=link_to 'Terms & Conditions', '#'
+	.dmca
+		.container
+			=image_tag('icons/dmca.png')
+			%p Protection: All original content on Pointzero-trading.com is created by the website owner, including but not limited to text, design, code, images, photographs and videos are considered to be the Intellectual Property of the website owner, whether copyrighted or not, and are protected by DMCA Protection Services using the Digital Millennium Copyright Act Title 17 Chapter 512 (c)(3). Reproduction or re-publication of this content is prohibited without permission.
